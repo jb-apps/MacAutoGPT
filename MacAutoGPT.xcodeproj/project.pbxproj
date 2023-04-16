@@ -12,6 +12,9 @@
 		9DAED89D29EC8CDC00B23231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DAED89C29EC8CDC00B23231 /* Assets.xcassets */; };
 		9DAED8A029EC8CDC00B23231 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DAED89F29EC8CDC00B23231 /* Preview Assets.xcassets */; };
 		9DAED8A929EC8D3500B23231 /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9DAED8A829EC8D3500B23231 /* PythonKit */; };
+		9DAEE7D329EC8FC900B23231 /* Python.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DAEE4B829EC8FB500B23231 /* Python.xcframework */; };
+		9DAEE7D729EC8FE600B23231 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DAEE7D629EC8FE600B23231 /* SystemConfiguration.framework */; };
+		9DCDDF0329EC9A0400453483 /* python-stdlib in Resources */ = {isa = PBXBuildFile; fileRef = 9DCDDF0229EC9A0400453483 /* python-stdlib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,755 @@
 		9DAED89C29EC8CDC00B23231 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DAED89F29EC8CDC00B23231 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9DAED8A129EC8CDC00B23231 /* MacAutoGPT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacAutoGPT.entitlements; sourceTree = "<group>"; };
+		9DAEE4B829EC8FB500B23231 /* Python.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Python.xcframework; sourceTree = "<group>"; };
+		9DAEE7D629EC8FE600B23231 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9DCDD5E429EC974700453483 /* zipfile.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = zipfile.py; sourceTree = "<group>"; };
+		9DCDD5E529EC974700453483 /* shutil.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = shutil.py; sourceTree = "<group>"; };
+		9DCDD5E629EC974700453483 /* tempfile.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = tempfile.py; sourceTree = "<group>"; };
+		9DCDD5E829EC974700453483 /* _sqlite3.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_sqlite3.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD5E929EC974700453483 /* _scproxy.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_scproxy.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD5EA29EC974700453483 /* _md5.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_md5.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD5EB29EC974700453483 /* _multiprocessing.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_multiprocessing.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD5EC29EC974700453483 /* _heapq.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_heapq.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD5ED29EC974700453483 /* _codecs_kr.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_codecs_kr.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD5EE29EC974700453483 /* _opcode.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_opcode.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD5EF29EC974700453483 /* _codecs_tw.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_codecs_tw.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD5F029EC974700453483 /* _uuid.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_uuid.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD5F129EC974700453483 /* _elementtree.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_elementtree.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD5F229EC974700453483 /* cmath.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "cmath.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD5F329EC974700453483 /* _crypt.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_crypt.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD5F429EC974700453483 /* _lsprof.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_lsprof.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD5F529EC974700453483 /* resource.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "resource.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD5F629EC974700453483 /* _codecs_hk.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_codecs_hk.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD5F729EC974700453483 /* audioop.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "audioop.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD5F829EC974700453483 /* _contextvars.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_contextvars.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD5F929EC974700453483 /* _random.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_random.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD5FA29EC974700453483 /* _json.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_json.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD5FB29EC974700453483 /* binascii.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "binascii.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD5FC29EC974700453483 /* _datetime.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_datetime.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD5FD29EC974700453483 /* mmap.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "mmap.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD5FE29EC974700453483 /* nis.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "nis.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD5FF29EC974700453483 /* _bz2.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_bz2.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD60029EC974700453483 /* _codecs_jp.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_codecs_jp.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD60129EC974700453483 /* _ctypes.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_ctypes.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD60229EC974700453483 /* math.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "math.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD60329EC974700453483 /* _codecs_iso2022.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_codecs_iso2022.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD60429EC974700453483 /* _curses.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_curses.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD60529EC974700453483 /* _dbm.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_dbm.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD60629EC974700453483 /* _ctypes_test.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_ctypes_test.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD60729EC974700453483 /* unicodedata.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "unicodedata.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD60829EC974700453483 /* termios.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "termios.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD60929EC974700453483 /* zlib.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "zlib.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD60A29EC974700453483 /* _sha256.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_sha256.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD60B29EC974700453483 /* _bisect.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_bisect.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD60C29EC974700453483 /* _asyncio.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_asyncio.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD60D29EC974700453483 /* _codecs_cn.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_codecs_cn.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD60E29EC974700453483 /* _multibytecodec.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_multibytecodec.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD60F29EC974700453483 /* _sha512.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_sha512.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD61029EC974700453483 /* _posixsubprocess.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_posixsubprocess.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD61129EC974700453483 /* _pickle.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_pickle.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD61229EC974700453483 /* pyexpat.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "pyexpat.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD61329EC974700453483 /* select.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "select.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD61429EC974700453483 /* _lzma.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_lzma.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD61529EC974700453483 /* readline.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "readline.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD61629EC974700453483 /* _typing.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_typing.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD61729EC974700453483 /* syslog.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "syslog.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD61829EC974700453483 /* _blake2.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_blake2.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD61929EC974700453483 /* _queue.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_queue.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD61A29EC974700453483 /* array.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "array.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD61B29EC974700453483 /* _struct.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_struct.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD61C29EC974700453483 /* _zoneinfo.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_zoneinfo.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD61D29EC974700453483 /* _posixshmem.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_posixshmem.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD61E29EC974700453483 /* _sha1.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_sha1.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD61F29EC974700453483 /* _decimal.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_decimal.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD62029EC974700453483 /* _socket.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_socket.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD62129EC974700453483 /* _hashlib.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_hashlib.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD62229EC974700453483 /* _curses_panel.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_curses_panel.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD62329EC974700453483 /* grp.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "grp.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD62429EC974700453483 /* _ssl.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_ssl.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD62529EC974700453483 /* _sha3.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_sha3.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD62629EC974700453483 /* fcntl.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "fcntl.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD62729EC974700453483 /* _statistics.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_statistics.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD62829EC974700453483 /* _csv.cpython-311-darwin.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = "_csv.cpython-311-darwin.so"; sourceTree = "<group>"; };
+		9DCDD62A29EC974700453483 /* mac_romanian.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = mac_romanian.py; sourceTree = "<group>"; };
+		9DCDD62B29EC974700453483 /* mac_farsi.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = mac_farsi.py; sourceTree = "<group>"; };
+		9DCDD62C29EC974700453483 /* idna.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = idna.py; sourceTree = "<group>"; };
+		9DCDD62D29EC974700453483 /* cp273.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp273.py; sourceTree = "<group>"; };
+		9DCDD62E29EC974700453483 /* punycode.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = punycode.py; sourceTree = "<group>"; };
+		9DCDD62F29EC974700453483 /* raw_unicode_escape.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = raw_unicode_escape.py; sourceTree = "<group>"; };
+		9DCDD63029EC974700453483 /* utf_8.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = utf_8.py; sourceTree = "<group>"; };
+		9DCDD63129EC974700453483 /* cp1252.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp1252.py; sourceTree = "<group>"; };
+		9DCDD63229EC974700453483 /* cp869.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp869.py; sourceTree = "<group>"; };
+		9DCDD63329EC974700453483 /* iso8859_14.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = iso8859_14.py; sourceTree = "<group>"; };
+		9DCDD63429EC974700453483 /* iso8859_2.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = iso8859_2.py; sourceTree = "<group>"; };
+		9DCDD63529EC974700453483 /* mac_arabic.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = mac_arabic.py; sourceTree = "<group>"; };
+		9DCDD63629EC974700453483 /* mac_croatian.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = mac_croatian.py; sourceTree = "<group>"; };
+		9DCDD63729EC974700453483 /* big5hkscs.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = big5hkscs.py; sourceTree = "<group>"; };
+		9DCDD63829EC974700453483 /* cp1256.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp1256.py; sourceTree = "<group>"; };
+		9DCDD63929EC974700453483 /* iso8859_6.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = iso8859_6.py; sourceTree = "<group>"; };
+		9DCDD63A29EC974700453483 /* iso8859_10.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = iso8859_10.py; sourceTree = "<group>"; };
+		9DCDD63B29EC974700453483 /* iso2022_kr.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = iso2022_kr.py; sourceTree = "<group>"; };
+		9DCDD63C29EC974700453483 /* cp1140.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp1140.py; sourceTree = "<group>"; };
+		9DCDD63D29EC974700453483 /* cp1125.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp1125.py; sourceTree = "<group>"; };
+		9DCDD63E29EC974700453483 /* iso2022_jp_1.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = iso2022_jp_1.py; sourceTree = "<group>"; };
+		9DCDD63F29EC974700453483 /* cp1257.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp1257.py; sourceTree = "<group>"; };
+		9DCDD64029EC974700453483 /* cp949.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp949.py; sourceTree = "<group>"; };
+		9DCDD64129EC974700453483 /* cp858.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp858.py; sourceTree = "<group>"; };
+		9DCDD64229EC974700453483 /* iso8859_7.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = iso8859_7.py; sourceTree = "<group>"; };
+		9DCDD64329EC974700453483 /* iso8859_11.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = iso8859_11.py; sourceTree = "<group>"; };
+		9DCDD64429EC974700453483 /* hp_roman8.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = hp_roman8.py; sourceTree = "<group>"; };
+		9DCDD64529EC974700453483 /* koi8_r.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = koi8_r.py; sourceTree = "<group>"; };
+		9DCDD64629EC974700453483 /* zlib_codec.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = zlib_codec.py; sourceTree = "<group>"; };
+		9DCDD64729EC974700453483 /* gbk.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = gbk.py; sourceTree = "<group>"; };
+		9DCDD64829EC974700453483 /* johab.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = johab.py; sourceTree = "<group>"; };
+		9DCDD64929EC974700453483 /* cp1253.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp1253.py; sourceTree = "<group>"; };
+		9DCDD64A29EC974700453483 /* iso8859_15.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = iso8859_15.py; sourceTree = "<group>"; };
+		9DCDD64B29EC974700453483 /* iso2022_jp_2004.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = iso2022_jp_2004.py; sourceTree = "<group>"; };
+		9DCDD64C29EC974700453483 /* mac_iceland.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = mac_iceland.py; sourceTree = "<group>"; };
+		9DCDD64D29EC974700453483 /* iso8859_3.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = iso8859_3.py; sourceTree = "<group>"; };
+		9DCDD64E29EC974700453483 /* mac_greek.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = mac_greek.py; sourceTree = "<group>"; };
+		9DCDD64F29EC974700453483 /* rot_13.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = rot_13.py; sourceTree = "<group>"; };
+		9DCDD65029EC974700453483 /* utf_16_be.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = utf_16_be.py; sourceTree = "<group>"; };
+		9DCDD65129EC974700453483 /* euc_kr.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = euc_kr.py; sourceTree = "<group>"; };
+		9DCDD65229EC974700453483 /* euc_jisx0213.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = euc_jisx0213.py; sourceTree = "<group>"; };
+		9DCDD65329EC974700453483 /* cp863.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp863.py; sourceTree = "<group>"; };
+		9DCDD65429EC974700453483 /* ascii.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = ascii.py; sourceTree = "<group>"; };
+		9DCDD65529EC974700453483 /* iso8859_8.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = iso8859_8.py; sourceTree = "<group>"; };
+		9DCDD65629EC974700453483 /* cp857.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp857.py; sourceTree = "<group>"; };
+		9DCDD65729EC974700453483 /* utf_32_be.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = utf_32_be.py; sourceTree = "<group>"; };
+		9DCDD65829EC974700453483 /* cp1258.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp1258.py; sourceTree = "<group>"; };
+		9DCDD65929EC974700453483 /* oem.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = oem.py; sourceTree = "<group>"; };
+		9DCDD65A29EC974700453483 /* mac_latin2.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = mac_latin2.py; sourceTree = "<group>"; };
+		9DCDD65B29EC974700453483 /* cp775.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp775.py; sourceTree = "<group>"; };
+		9DCDD65C29EC974700453483 /* mac_roman.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = mac_roman.py; sourceTree = "<group>"; };
+		9DCDD65D29EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD65E29EC974700453483 /* cp852.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp852.py; sourceTree = "<group>"; };
+		9DCDD65F29EC974700453483 /* shift_jisx0213.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = shift_jisx0213.py; sourceTree = "<group>"; };
+		9DCDD66029EC974700453483 /* cp866.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp866.py; sourceTree = "<group>"; };
+		9DCDD66129EC974700453483 /* utf_7.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = utf_7.py; sourceTree = "<group>"; };
+		9DCDD66229EC974700453483 /* base64_codec.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = base64_codec.py; sourceTree = "<group>"; };
+		9DCDD66329EC974700453483 /* cp932.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp932.py; sourceTree = "<group>"; };
+		9DCDD66429EC974700453483 /* cp720.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp720.py; sourceTree = "<group>"; };
+		9DCDD66529EC974700453483 /* cp862.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp862.py; sourceTree = "<group>"; };
+		9DCDD66629EC974700453483 /* cp437.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp437.py; sourceTree = "<group>"; };
+		9DCDD66729EC974700453483 /* palmos.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = palmos.py; sourceTree = "<group>"; };
+		9DCDD66829EC974700453483 /* iso8859_9.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = iso8859_9.py; sourceTree = "<group>"; };
+		9DCDD66929EC974700453483 /* cp856.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp856.py; sourceTree = "<group>"; };
+		9DCDD66A29EC974700453483 /* aliases.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = aliases.py; sourceTree = "<group>"; };
+		9DCDD66B29EC974700453483 /* latin_1.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = latin_1.py; sourceTree = "<group>"; };
+		9DCDD66C29EC974700453483 /* cp875.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp875.py; sourceTree = "<group>"; };
+		9DCDD66D29EC974700453483 /* cp950.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp950.py; sourceTree = "<group>"; };
+		9DCDD66E29EC974700453483 /* unicode_escape.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = unicode_escape.py; sourceTree = "<group>"; };
+		9DCDD66F29EC974700453483 /* cp737.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp737.py; sourceTree = "<group>"; };
+		9DCDD67029EC974700453483 /* cp865.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp865.py; sourceTree = "<group>"; };
+		9DCDD67129EC974700453483 /* ptcp154.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = ptcp154.py; sourceTree = "<group>"; };
+		9DCDD67229EC974700453483 /* big5.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = big5.py; sourceTree = "<group>"; };
+		9DCDD67329EC974700453483 /* cp424.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp424.py; sourceTree = "<group>"; };
+		9DCDD67429EC974700453483 /* cp861.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp861.py; sourceTree = "<group>"; };
+		9DCDD67529EC974700453483 /* euc_jp.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = euc_jp.py; sourceTree = "<group>"; };
+		9DCDD67629EC974700453483 /* cp855.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp855.py; sourceTree = "<group>"; };
+		9DCDD67729EC974700453483 /* shift_jis.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = shift_jis.py; sourceTree = "<group>"; };
+		9DCDD67829EC974700453483 /* utf_32_le.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = utf_32_le.py; sourceTree = "<group>"; };
+		9DCDD67929EC974700453483 /* cp500.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp500.py; sourceTree = "<group>"; };
+		9DCDD67A29EC974700453483 /* undefined.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = undefined.py; sourceTree = "<group>"; };
+		9DCDD67B29EC974700453483 /* cp860.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp860.py; sourceTree = "<group>"; };
+		9DCDD67C29EC974700453483 /* uu_codec.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = uu_codec.py; sourceTree = "<group>"; };
+		9DCDD67D29EC974700453483 /* utf_16_le.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = utf_16_le.py; sourceTree = "<group>"; };
+		9DCDD67E29EC974700453483 /* gb18030.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = gb18030.py; sourceTree = "<group>"; };
+		9DCDD67F29EC974700453483 /* cp874.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp874.py; sourceTree = "<group>"; };
+		9DCDD68029EC974700453483 /* cp850.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp850.py; sourceTree = "<group>"; };
+		9DCDD68129EC974700453483 /* cp864.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp864.py; sourceTree = "<group>"; };
+		9DCDD68229EC974700453483 /* utf_32.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = utf_32.py; sourceTree = "<group>"; };
+		9DCDD68329EC974700453483 /* koi8_u.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = koi8_u.py; sourceTree = "<group>"; };
+		9DCDD68429EC974700453483 /* cp1254.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp1254.py; sourceTree = "<group>"; };
+		9DCDD68529EC974700453483 /* iso2022_jp_2.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = iso2022_jp_2.py; sourceTree = "<group>"; };
+		9DCDD68629EC974700453483 /* utf_16.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = utf_16.py; sourceTree = "<group>"; };
+		9DCDD68729EC974700453483 /* iso8859_4.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = iso8859_4.py; sourceTree = "<group>"; };
+		9DCDD68829EC974700453483 /* euc_jis_2004.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = euc_jis_2004.py; sourceTree = "<group>"; };
+		9DCDD68929EC974700453483 /* mbcs.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = mbcs.py; sourceTree = "<group>"; };
+		9DCDD68A29EC974700453483 /* cp1250.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp1250.py; sourceTree = "<group>"; };
+		9DCDD68B29EC974700453483 /* gb2312.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = gb2312.py; sourceTree = "<group>"; };
+		9DCDD68C29EC974700453483 /* iso8859_16.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = iso8859_16.py; sourceTree = "<group>"; };
+		9DCDD68D29EC974700453483 /* mac_cyrillic.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = mac_cyrillic.py; sourceTree = "<group>"; };
+		9DCDD68E29EC974700453483 /* hex_codec.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = hex_codec.py; sourceTree = "<group>"; };
+		9DCDD68F29EC974700453483 /* tis_620.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = tis_620.py; sourceTree = "<group>"; };
+		9DCDD69029EC974700453483 /* cp037.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp037.py; sourceTree = "<group>"; };
+		9DCDD69129EC974700453483 /* cp1006.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp1006.py; sourceTree = "<group>"; };
+		9DCDD69229EC974700453483 /* cp1251.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp1251.py; sourceTree = "<group>"; };
+		9DCDD69329EC974700453483 /* mac_turkish.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = mac_turkish.py; sourceTree = "<group>"; };
+		9DCDD69429EC974700453483 /* iso2022_jp_ext.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = iso2022_jp_ext.py; sourceTree = "<group>"; };
+		9DCDD69529EC974700453483 /* iso8859_1.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = iso8859_1.py; sourceTree = "<group>"; };
+		9DCDD69629EC974700453483 /* hz.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = hz.py; sourceTree = "<group>"; };
+		9DCDD69729EC974700453483 /* bz2_codec.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = bz2_codec.py; sourceTree = "<group>"; };
+		9DCDD69829EC974700453483 /* quopri_codec.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = quopri_codec.py; sourceTree = "<group>"; };
+		9DCDD69929EC974700453483 /* kz1048.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = kz1048.py; sourceTree = "<group>"; };
+		9DCDD69A29EC974700453483 /* utf_8_sig.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = utf_8_sig.py; sourceTree = "<group>"; };
+		9DCDD69B29EC974700453483 /* koi8_t.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = koi8_t.py; sourceTree = "<group>"; };
+		9DCDD69C29EC974700453483 /* cp1255.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp1255.py; sourceTree = "<group>"; };
+		9DCDD69D29EC974700453483 /* iso2022_jp_3.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = iso2022_jp_3.py; sourceTree = "<group>"; };
+		9DCDD69E29EC974700453483 /* shift_jis_2004.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = shift_jis_2004.py; sourceTree = "<group>"; };
+		9DCDD69F29EC974700453483 /* cp1026.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cp1026.py; sourceTree = "<group>"; };
+		9DCDD6A029EC974700453483 /* charmap.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = charmap.py; sourceTree = "<group>"; };
+		9DCDD6A129EC974700453483 /* iso8859_5.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = iso8859_5.py; sourceTree = "<group>"; };
+		9DCDD6A229EC974700453483 /* iso8859_13.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = iso8859_13.py; sourceTree = "<group>"; };
+		9DCDD6A329EC974700453483 /* iso2022_jp.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = iso2022_jp.py; sourceTree = "<group>"; };
+		9DCDD6A429EC974700453483 /* queue.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = queue.py; sourceTree = "<group>"; };
+		9DCDD6A529EC974700453483 /* _pyio.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _pyio.py; sourceTree = "<group>"; };
+		9DCDD6A629EC974700453483 /* crypt.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = crypt.py; sourceTree = "<group>"; };
+		9DCDD6A729EC974700453483 /* pkgutil.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = pkgutil.py; sourceTree = "<group>"; };
+		9DCDD6A929EC974700453483 /* _msvccompiler.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _msvccompiler.py; sourceTree = "<group>"; };
+		9DCDD6AA29EC974700453483 /* unixccompiler.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = unixccompiler.py; sourceTree = "<group>"; };
+		9DCDD6AB29EC974700453483 /* filelist.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = filelist.py; sourceTree = "<group>"; };
+		9DCDD6AC29EC974700453483 /* ccompiler.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = ccompiler.py; sourceTree = "<group>"; };
+		9DCDD6AD29EC974700453483 /* msvc9compiler.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = msvc9compiler.py; sourceTree = "<group>"; };
+		9DCDD6AE29EC974700453483 /* archive_util.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = archive_util.py; sourceTree = "<group>"; };
+		9DCDD6AF29EC974700453483 /* cmd.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cmd.py; sourceTree = "<group>"; };
+		9DCDD6B029EC974700453483 /* config.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = config.py; sourceTree = "<group>"; };
+		9DCDD6B129EC974700453483 /* version.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = version.py; sourceTree = "<group>"; };
+		9DCDD6B229EC974700453483 /* log.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = log.py; sourceTree = "<group>"; };
+		9DCDD6B329EC974700453483 /* util.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = util.py; sourceTree = "<group>"; };
+		9DCDD6B429EC974700453483 /* fancy_getopt.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fancy_getopt.py; sourceTree = "<group>"; };
+		9DCDD6B529EC974700453483 /* versionpredicate.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = versionpredicate.py; sourceTree = "<group>"; };
+		9DCDD6B629EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD6B729EC974700453483 /* file_util.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = file_util.py; sourceTree = "<group>"; };
+		9DCDD6B829EC974700453483 /* core.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = core.py; sourceTree = "<group>"; };
+		9DCDD6B929EC974700453483 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		9DCDD6BA29EC974700453483 /* cygwinccompiler.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cygwinccompiler.py; sourceTree = "<group>"; };
+		9DCDD6BB29EC974700453483 /* extension.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = extension.py; sourceTree = "<group>"; };
+		9DCDD6BC29EC974700453483 /* debug.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = debug.py; sourceTree = "<group>"; };
+		9DCDD6BD29EC974700453483 /* spawn.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = spawn.py; sourceTree = "<group>"; };
+		9DCDD6BE29EC974700453483 /* text_file.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = text_file.py; sourceTree = "<group>"; };
+		9DCDD6BF29EC974700453483 /* msvccompiler.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = msvccompiler.py; sourceTree = "<group>"; };
+		9DCDD6C029EC974700453483 /* errors.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = errors.py; sourceTree = "<group>"; };
+		9DCDD6C129EC974700453483 /* dep_util.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = dep_util.py; sourceTree = "<group>"; };
+		9DCDD6C329EC974700453483 /* build.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = build.py; sourceTree = "<group>"; };
+		9DCDD6C429EC974700453483 /* build_ext.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = build_ext.py; sourceTree = "<group>"; };
+		9DCDD6C529EC974700453483 /* config.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = config.py; sourceTree = "<group>"; };
+		9DCDD6C629EC974700453483 /* clean.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = clean.py; sourceTree = "<group>"; };
+		9DCDD6C729EC974700453483 /* check.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = check.py; sourceTree = "<group>"; };
+		9DCDD6C829EC974700453483 /* install_scripts.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = install_scripts.py; sourceTree = "<group>"; };
+		9DCDD6C929EC974700453483 /* upload.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = upload.py; sourceTree = "<group>"; };
+		9DCDD6CA29EC974700453483 /* register.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = register.py; sourceTree = "<group>"; };
+		9DCDD6CB29EC974700453483 /* install_headers.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = install_headers.py; sourceTree = "<group>"; };
+		9DCDD6CC29EC974700453483 /* install_lib.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = install_lib.py; sourceTree = "<group>"; };
+		9DCDD6CD29EC974700453483 /* build_py.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = build_py.py; sourceTree = "<group>"; };
+		9DCDD6CE29EC974700453483 /* bdist_dumb.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = bdist_dumb.py; sourceTree = "<group>"; };
+		9DCDD6CF29EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD6D029EC974700453483 /* sdist.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = sdist.py; sourceTree = "<group>"; };
+		9DCDD6D129EC974700453483 /* bdist.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = bdist.py; sourceTree = "<group>"; };
+		9DCDD6D229EC974700453483 /* build_scripts.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = build_scripts.py; sourceTree = "<group>"; };
+		9DCDD6D329EC974700453483 /* bdist_rpm.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = bdist_rpm.py; sourceTree = "<group>"; };
+		9DCDD6D429EC974700453483 /* build_clib.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = build_clib.py; sourceTree = "<group>"; };
+		9DCDD6D529EC974700453483 /* command_template */ = {isa = PBXFileReference; lastKnownFileType = text; path = command_template; sourceTree = "<group>"; };
+		9DCDD6D629EC974700453483 /* install.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = install.py; sourceTree = "<group>"; };
+		9DCDD6D729EC974700453483 /* install_egg_info.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = install_egg_info.py; sourceTree = "<group>"; };
+		9DCDD6D829EC974700453483 /* install_data.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = install_data.py; sourceTree = "<group>"; };
+		9DCDD6D929EC974700453483 /* dir_util.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = dir_util.py; sourceTree = "<group>"; };
+		9DCDD6DA29EC974700453483 /* sysconfig.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = sysconfig.py; sourceTree = "<group>"; };
+		9DCDD6DB29EC974700453483 /* dist.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = dist.py; sourceTree = "<group>"; };
+		9DCDD6DC29EC974700453483 /* bcppcompiler.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = bcppcompiler.py; sourceTree = "<group>"; };
+		9DCDD6DD29EC974700453483 /* lzma.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = lzma.py; sourceTree = "<group>"; };
+		9DCDD6DE29EC974700453483 /* asyncore.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = asyncore.py; sourceTree = "<group>"; };
+		9DCDD6DF29EC974700453483 /* _sitebuiltins.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _sitebuiltins.py; sourceTree = "<group>"; };
+		9DCDD6E029EC974700453483 /* _bootsubprocess.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _bootsubprocess.py; sourceTree = "<group>"; };
+		9DCDD6E129EC974700453483 /* copyreg.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = copyreg.py; sourceTree = "<group>"; };
+		9DCDD6E229EC974700453483 /* sndhdr.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = sndhdr.py; sourceTree = "<group>"; };
+		9DCDD6E329EC974700453483 /* rlcompleter.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = rlcompleter.py; sourceTree = "<group>"; };
+		9DCDD6E529EC974700453483 /* _common.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _common.py; sourceTree = "<group>"; };
+		9DCDD6E629EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD6E729EC974700453483 /* _zoneinfo.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _zoneinfo.py; sourceTree = "<group>"; };
+		9DCDD6E829EC974700453483 /* _tzpath.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _tzpath.py; sourceTree = "<group>"; };
+		9DCDD6E929EC974700453483 /* gzip.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = gzip.py; sourceTree = "<group>"; };
+		9DCDD6EB29EC974700453483 /* _aix.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _aix.py; sourceTree = "<group>"; };
+		9DCDD6EC29EC974700453483 /* wintypes.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = wintypes.py; sourceTree = "<group>"; };
+		9DCDD6ED29EC974700453483 /* util.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = util.py; sourceTree = "<group>"; };
+		9DCDD6EE29EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD6EF29EC974700453483 /* _endian.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _endian.py; sourceTree = "<group>"; };
+		9DCDD6F129EC974700453483 /* dyld.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = dyld.py; sourceTree = "<group>"; };
+		9DCDD6F229EC974700453483 /* framework.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = framework.py; sourceTree = "<group>"; };
+		9DCDD6F329EC974700453483 /* fetch_macholib */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = fetch_macholib; sourceTree = "<group>"; };
+		9DCDD6F429EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD6F529EC974700453483 /* README.ctypes */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.ctypes; sourceTree = "<group>"; };
+		9DCDD6F629EC974700453483 /* fetch_macholib.bat */ = {isa = PBXFileReference; lastKnownFileType = text; path = fetch_macholib.bat; sourceTree = "<group>"; };
+		9DCDD6F729EC974700453483 /* dylib.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = dylib.py; sourceTree = "<group>"; };
+		9DCDD6F829EC974700453483 /* ipaddress.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = ipaddress.py; sourceTree = "<group>"; };
+		9DCDD6F929EC974700453483 /* trace.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = trace.py; sourceTree = "<group>"; };
+		9DCDD6FA29EC974700453483 /* webbrowser.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = webbrowser.py; sourceTree = "<group>"; };
+		9DCDD6FB29EC974700453483 /* nntplib.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = nntplib.py; sourceTree = "<group>"; };
+		9DCDD6FC29EC974700453483 /* _compat_pickle.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _compat_pickle.py; sourceTree = "<group>"; };
+		9DCDD6FE29EC974700453483 /* signals.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = signals.py; sourceTree = "<group>"; };
+		9DCDD6FF29EC974700453483 /* runner.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = runner.py; sourceTree = "<group>"; };
+		9DCDD70029EC974700453483 /* suite.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = suite.py; sourceTree = "<group>"; };
+		9DCDD70229EC974700453483 /* test_result.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_result.py; sourceTree = "<group>"; };
+		9DCDD70329EC974700453483 /* support.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = support.py; sourceTree = "<group>"; };
+		9DCDD70429EC974700453483 /* test_loader.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_loader.py; sourceTree = "<group>"; };
+		9DCDD70529EC974700453483 /* test_async_case.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_async_case.py; sourceTree = "<group>"; };
+		9DCDD70629EC974700453483 /* test_skipping.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_skipping.py; sourceTree = "<group>"; };
+		9DCDD70729EC974700453483 /* test_setups.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_setups.py; sourceTree = "<group>"; };
+		9DCDD70829EC974700453483 /* test_functiontestcase.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_functiontestcase.py; sourceTree = "<group>"; };
+		9DCDD70929EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD70A29EC974700453483 /* test_break.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_break.py; sourceTree = "<group>"; };
+		9DCDD70C29EC974700453483 /* testasync.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = testasync.py; sourceTree = "<group>"; };
+		9DCDD70D29EC974700453483 /* support.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = support.py; sourceTree = "<group>"; };
+		9DCDD70E29EC974700453483 /* testcallable.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = testcallable.py; sourceTree = "<group>"; };
+		9DCDD70F29EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD71029EC974700453483 /* testmagicmethods.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = testmagicmethods.py; sourceTree = "<group>"; };
+		9DCDD71129EC974700453483 /* testmock.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = testmock.py; sourceTree = "<group>"; };
+		9DCDD71229EC974700453483 /* testwith.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = testwith.py; sourceTree = "<group>"; };
+		9DCDD71329EC974700453483 /* testhelpers.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = testhelpers.py; sourceTree = "<group>"; };
+		9DCDD71429EC974700453483 /* testpatch.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = testpatch.py; sourceTree = "<group>"; };
+		9DCDD71529EC974700453483 /* testsealable.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = testsealable.py; sourceTree = "<group>"; };
+		9DCDD71629EC974700453483 /* testsentinel.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = testsentinel.py; sourceTree = "<group>"; };
+		9DCDD71729EC974700453483 /* __main__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __main__.py; sourceTree = "<group>"; };
+		9DCDD71829EC974700453483 /* test_case.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_case.py; sourceTree = "<group>"; };
+		9DCDD71929EC974700453483 /* test_discovery.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_discovery.py; sourceTree = "<group>"; };
+		9DCDD71A29EC974700453483 /* test_runner.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_runner.py; sourceTree = "<group>"; };
+		9DCDD71B29EC974700453483 /* test_program.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_program.py; sourceTree = "<group>"; };
+		9DCDD71C29EC974700453483 /* test_suite.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_suite.py; sourceTree = "<group>"; };
+		9DCDD71D29EC974700453483 /* test_assertions.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_assertions.py; sourceTree = "<group>"; };
+		9DCDD71E29EC974700453483 /* _test_warnings.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _test_warnings.py; sourceTree = "<group>"; };
+		9DCDD71F29EC974700453483 /* dummy.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = dummy.py; sourceTree = "<group>"; };
+		9DCDD72029EC974700453483 /* __main__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __main__.py; sourceTree = "<group>"; };
+		9DCDD72129EC974700453483 /* util.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = util.py; sourceTree = "<group>"; };
+		9DCDD72229EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD72329EC974700453483 /* result.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = result.py; sourceTree = "<group>"; };
+		9DCDD72429EC974700453483 /* loader.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = loader.py; sourceTree = "<group>"; };
+		9DCDD72529EC974700453483 /* case.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = case.py; sourceTree = "<group>"; };
+		9DCDD72629EC974700453483 /* main.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = main.py; sourceTree = "<group>"; };
+		9DCDD72729EC974700453483 /* async_case.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = async_case.py; sourceTree = "<group>"; };
+		9DCDD72829EC974700453483 /* __main__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __main__.py; sourceTree = "<group>"; };
+		9DCDD72929EC974700453483 /* _log.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _log.py; sourceTree = "<group>"; };
+		9DCDD72A29EC974700453483 /* mock.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = mock.py; sourceTree = "<group>"; };
+		9DCDD72B29EC974700453483 /* dis.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = dis.py; sourceTree = "<group>"; };
+		9DCDD72C29EC974700453483 /* bdb.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = bdb.py; sourceTree = "<group>"; };
+		9DCDD72D29EC974700453483 /* zipapp.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = zipapp.py; sourceTree = "<group>"; };
+		9DCDD72E29EC974700453483 /* cmd.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cmd.py; sourceTree = "<group>"; };
+		9DCDD72F29EC974700453483 /* tty.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = tty.py; sourceTree = "<group>"; };
+		9DCDD73129EC974700453483 /* textpad.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = textpad.py; sourceTree = "<group>"; };
+		9DCDD73229EC974700453483 /* ascii.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = ascii.py; sourceTree = "<group>"; };
+		9DCDD73329EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD73429EC974700453483 /* has_key.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = has_key.py; sourceTree = "<group>"; };
+		9DCDD73529EC974700453483 /* panel.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = panel.py; sourceTree = "<group>"; };
+		9DCDD73629EC974700453483 /* tabnanny.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = tabnanny.py; sourceTree = "<group>"; };
+		9DCDD73729EC974700453483 /* _py_abc.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _py_abc.py; sourceTree = "<group>"; };
+		9DCDD73829EC974700453483 /* cProfile.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cProfile.py; sourceTree = "<group>"; };
+		9DCDD73929EC974700453483 /* zipimport.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = zipimport.py; sourceTree = "<group>"; };
+		9DCDD73A29EC974700453483 /* token.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = token.py; sourceTree = "<group>"; };
+		9DCDD73B29EC974700453483 /* textwrap.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = textwrap.py; sourceTree = "<group>"; };
+		9DCDD73C29EC974700453483 /* base64.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = base64.py; sourceTree = "<group>"; };
+		9DCDD73D29EC974700453483 /* _markupbase.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _markupbase.py; sourceTree = "<group>"; };
+		9DCDD73E29EC974700453483 /* bz2.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = bz2.py; sourceTree = "<group>"; };
+		9DCDD74029EC974700453483 /* _types.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _types.py; sourceTree = "<group>"; };
+		9DCDD74129EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD74229EC974700453483 /* _parser.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _parser.py; sourceTree = "<group>"; };
+		9DCDD74329EC974700453483 /* _re.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _re.py; sourceTree = "<group>"; };
+		9DCDD74429EC974700453483 /* signal.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = signal.py; sourceTree = "<group>"; };
+		9DCDD74529EC974700453483 /* sre_constants.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = sre_constants.py; sourceTree = "<group>"; };
+		9DCDD74629EC974700453483 /* cgitb.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cgitb.py; sourceTree = "<group>"; };
+		9DCDD74729EC974700453483 /* _aix_support.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _aix_support.py; sourceTree = "<group>"; };
+		9DCDD74829EC974700453483 /* _threading_local.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _threading_local.py; sourceTree = "<group>"; };
+		9DCDD74929EC974700453483 /* pyclbr.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = pyclbr.py; sourceTree = "<group>"; };
+		9DCDD74A29EC974700453483 /* gettext.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = gettext.py; sourceTree = "<group>"; };
+		9DCDD74C29EC974700453483 /* spam.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = spam.py; sourceTree = "<group>"; };
+		9DCDD74D29EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD74E29EC974700453483 /* _ios_support.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _ios_support.py; sourceTree = "<group>"; };
+		9DCDD74F29EC974700453483 /* wave.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = wave.py; sourceTree = "<group>"; };
+		9DCDD75029EC974700453483 /* weakref.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = weakref.py; sourceTree = "<group>"; };
+		9DCDD75129EC974700453483 /* bisect.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = bisect.py; sourceTree = "<group>"; };
+		9DCDD75229EC974700453483 /* opcode.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = opcode.py; sourceTree = "<group>"; };
+		9DCDD75329EC974700453483 /* netrc.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = netrc.py; sourceTree = "<group>"; };
+		9DCDD75429EC974700453483 /* heapq.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = heapq.py; sourceTree = "<group>"; };
+		9DCDD75529EC974700453483 /* functools.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = functools.py; sourceTree = "<group>"; };
+		9DCDD75629EC974700453483 /* modulefinder.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = modulefinder.py; sourceTree = "<group>"; };
+		9DCDD75729EC974700453483 /* _compression.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _compression.py; sourceTree = "<group>"; };
+		9DCDD75829EC974700453483 /* tracemalloc.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = tracemalloc.py; sourceTree = "<group>"; };
+		9DCDD75929EC974700453483 /* hashlib.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = hashlib.py; sourceTree = "<group>"; };
+		9DCDD75A29EC974700453483 /* cgi.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cgi.py; sourceTree = "<group>"; };
+		9DCDD75B29EC974700453483 /* codeop.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = codeop.py; sourceTree = "<group>"; };
+		9DCDD75C29EC974700453483 /* fnmatch.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fnmatch.py; sourceTree = "<group>"; };
+		9DCDD75F29EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD76029EC974700453483 /* connection.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = connection.py; sourceTree = "<group>"; };
+		9DCDD76129EC974700453483 /* queues.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = queues.py; sourceTree = "<group>"; };
+		9DCDD76229EC974700453483 /* heap.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = heap.py; sourceTree = "<group>"; };
+		9DCDD76329EC974700453483 /* shared_memory.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = shared_memory.py; sourceTree = "<group>"; };
+		9DCDD76429EC974700453483 /* resource_tracker.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = resource_tracker.py; sourceTree = "<group>"; };
+		9DCDD76529EC974700453483 /* reduction.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = reduction.py; sourceTree = "<group>"; };
+		9DCDD76629EC974700453483 /* util.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = util.py; sourceTree = "<group>"; };
+		9DCDD76729EC974700453483 /* popen_spawn_win32.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = popen_spawn_win32.py; sourceTree = "<group>"; };
+		9DCDD76829EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD76929EC974700453483 /* forkserver.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = forkserver.py; sourceTree = "<group>"; };
+		9DCDD76A29EC974700453483 /* connection.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = connection.py; sourceTree = "<group>"; };
+		9DCDD76B29EC974700453483 /* context.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = context.py; sourceTree = "<group>"; };
+		9DCDD76C29EC974700453483 /* spawn.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = spawn.py; sourceTree = "<group>"; };
+		9DCDD76D29EC974700453483 /* synchronize.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = synchronize.py; sourceTree = "<group>"; };
+		9DCDD76E29EC974700453483 /* process.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = process.py; sourceTree = "<group>"; };
+		9DCDD76F29EC974700453483 /* sharedctypes.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = sharedctypes.py; sourceTree = "<group>"; };
+		9DCDD77029EC974700453483 /* popen_fork.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = popen_fork.py; sourceTree = "<group>"; };
+		9DCDD77129EC974700453483 /* pool.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = pool.py; sourceTree = "<group>"; };
+		9DCDD77229EC974700453483 /* popen_forkserver.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = popen_forkserver.py; sourceTree = "<group>"; };
+		9DCDD77329EC974700453483 /* popen_spawn_posix.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = popen_spawn_posix.py; sourceTree = "<group>"; };
+		9DCDD77429EC974700453483 /* managers.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = managers.py; sourceTree = "<group>"; };
+		9DCDD77529EC974700453483 /* resource_sharer.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = resource_sharer.py; sourceTree = "<group>"; };
+		9DCDD77629EC974700453483 /* traceback.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = traceback.py; sourceTree = "<group>"; };
+		9DCDD77729EC974700453483 /* nturl2path.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = nturl2path.py; sourceTree = "<group>"; };
+		9DCDD77829EC974700453483 /* warnings.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = warnings.py; sourceTree = "<group>"; };
+		9DCDD77929EC974700453483 /* subprocess.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = subprocess.py; sourceTree = "<group>"; };
+		9DCDD77A29EC974700453483 /* profile.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = profile.py; sourceTree = "<group>"; };
+		9DCDD77B29EC974700453483 /* imghdr.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = imghdr.py; sourceTree = "<group>"; };
+		9DCDD77C29EC974700453483 /* this.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = this.py; sourceTree = "<group>"; };
+		9DCDD77D29EC974700453483 /* filecmp.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = filecmp.py; sourceTree = "<group>"; };
+		9DCDD77E29EC974700453483 /* codecs.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = codecs.py; sourceTree = "<group>"; };
+		9DCDD78029EC974700453483 /* error.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = error.py; sourceTree = "<group>"; };
+		9DCDD78129EC974700453483 /* request.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = request.py; sourceTree = "<group>"; };
+		9DCDD78229EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD78329EC974700453483 /* response.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = response.py; sourceTree = "<group>"; };
+		9DCDD78429EC974700453483 /* robotparser.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = robotparser.py; sourceTree = "<group>"; };
+		9DCDD78529EC974700453483 /* parse.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = parse.py; sourceTree = "<group>"; };
+		9DCDD78629EC974700453483 /* uu.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = uu.py; sourceTree = "<group>"; };
+		9DCDD78729EC974700453483 /* _weakrefset.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _weakrefset.py; sourceTree = "<group>"; };
+		9DCDD78829EC974700453483 /* io.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = io.py; sourceTree = "<group>"; };
+		9DCDD78929EC974700453483 /* _sysconfigdata__darwin_darwin.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _sysconfigdata__darwin_darwin.py; sourceTree = "<group>"; };
+		9DCDD78A29EC974700453483 /* code.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = code.py; sourceTree = "<group>"; };
+		9DCDD78B29EC974700453483 /* operator.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = operator.py; sourceTree = "<group>"; };
+		9DCDD78C29EC974700453483 /* fileinput.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fileinput.py; sourceTree = "<group>"; };
+		9DCDD78D29EC974700453483 /* os.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = os.py; sourceTree = "<group>"; };
+		9DCDD78E29EC974700453483 /* difflib.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = difflib.py; sourceTree = "<group>"; };
+		9DCDD78F29EC974700453483 /* pydoc.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = pydoc.py; sourceTree = "<group>"; };
+		9DCDD79029EC974700453483 /* selectors.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = selectors.py; sourceTree = "<group>"; };
+		9DCDD79129EC974700453483 /* decimal.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = decimal.py; sourceTree = "<group>"; };
+		9DCDD79229EC974700453483 /* socketserver.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = socketserver.py; sourceTree = "<group>"; };
+		9DCDD79329EC974700453483 /* copy.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = copy.py; sourceTree = "<group>"; };
+		9DCDD79529EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD79629EC974700453483 /* parser.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = parser.py; sourceTree = "<group>"; };
+		9DCDD79729EC974700453483 /* entities.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = entities.py; sourceTree = "<group>"; };
+		9DCDD79829EC974700453483 /* genericpath.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = genericpath.py; sourceTree = "<group>"; };
+		9DCDD79929EC974700453483 /* linecache.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = linecache.py; sourceTree = "<group>"; };
+		9DCDD79A29EC974700453483 /* types.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = types.py; sourceTree = "<group>"; };
+		9DCDD79B29EC974700453483 /* mimetypes.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = mimetypes.py; sourceTree = "<group>"; };
+		9DCDD79C29EC974700453483 /* xdrlib.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = xdrlib.py; sourceTree = "<group>"; };
+		9DCDD79D29EC974700453483 /* colorsys.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = colorsys.py; sourceTree = "<group>"; };
+		9DCDD79E29EC974700453483 /* numbers.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = numbers.py; sourceTree = "<group>"; };
+		9DCDD79F29EC974700453483 /* _strptime.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _strptime.py; sourceTree = "<group>"; };
+		9DCDD7A029EC974700453483 /* contextvars.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = contextvars.py; sourceTree = "<group>"; };
+		9DCDD7A129EC974700453483 /* random.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = random.py; sourceTree = "<group>"; };
+		9DCDD7A229EC974700453483 /* ftplib.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = ftplib.py; sourceTree = "<group>"; };
+		9DCDD7A329EC974700453483 /* chunk.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = chunk.py; sourceTree = "<group>"; };
+		9DCDD7A429EC974700453483 /* optparse.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = optparse.py; sourceTree = "<group>"; };
+		9DCDD7A729EC974700453483 /* expat.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = expat.py; sourceTree = "<group>"; };
+		9DCDD7A829EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD7AA29EC974700453483 /* handler.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = handler.py; sourceTree = "<group>"; };
+		9DCDD7AB29EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD7AC29EC974700453483 /* saxutils.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = saxutils.py; sourceTree = "<group>"; };
+		9DCDD7AD29EC974700453483 /* xmlreader.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = xmlreader.py; sourceTree = "<group>"; };
+		9DCDD7AE29EC974700453483 /* expatreader.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = expatreader.py; sourceTree = "<group>"; };
+		9DCDD7AF29EC974700453483 /* _exceptions.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _exceptions.py; sourceTree = "<group>"; };
+		9DCDD7B029EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD7B229EC974700453483 /* pulldom.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = pulldom.py; sourceTree = "<group>"; };
+		9DCDD7B329EC974700453483 /* expatbuilder.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = expatbuilder.py; sourceTree = "<group>"; };
+		9DCDD7B429EC974700453483 /* domreg.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = domreg.py; sourceTree = "<group>"; };
+		9DCDD7B529EC974700453483 /* minicompat.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = minicompat.py; sourceTree = "<group>"; };
+		9DCDD7B629EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD7B729EC974700453483 /* NodeFilter.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = NodeFilter.py; sourceTree = "<group>"; };
+		9DCDD7B829EC974700453483 /* xmlbuilder.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = xmlbuilder.py; sourceTree = "<group>"; };
+		9DCDD7B929EC974700453483 /* minidom.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = minidom.py; sourceTree = "<group>"; };
+		9DCDD7BB29EC974700453483 /* ElementPath.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = ElementPath.py; sourceTree = "<group>"; };
+		9DCDD7BC29EC974700453483 /* cElementTree.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cElementTree.py; sourceTree = "<group>"; };
+		9DCDD7BD29EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD7BE29EC974700453483 /* ElementInclude.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = ElementInclude.py; sourceTree = "<group>"; };
+		9DCDD7BF29EC974700453483 /* ElementTree.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = ElementTree.py; sourceTree = "<group>"; };
+		9DCDD7C029EC974700453483 /* pdb.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = pdb.py; sourceTree = "<group>"; };
+		9DCDD7C129EC974700453483 /* threading.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = threading.py; sourceTree = "<group>"; };
+		9DCDD7C229EC974700453483 /* platform.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = platform.py; sourceTree = "<group>"; };
+		9DCDD7C329EC974700453483 /* pstats.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = pstats.py; sourceTree = "<group>"; };
+		9DCDD7C429EC974700453483 /* glob.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = glob.py; sourceTree = "<group>"; };
+		9DCDD7C529EC974700453483 /* quopri.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = quopri.py; sourceTree = "<group>"; };
+		9DCDD7C629EC974700453483 /* symtable.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = symtable.py; sourceTree = "<group>"; };
+		9DCDD7C729EC974700453483 /* pprint.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = pprint.py; sourceTree = "<group>"; };
+		9DCDD7C829EC974700453483 /* calendar.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = calendar.py; sourceTree = "<group>"; };
+		9DCDD7C929EC974700453483 /* inspect.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = inspect.py; sourceTree = "<group>"; };
+		9DCDD7CB29EC974700453483 /* util.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = util.py; sourceTree = "<group>"; };
+		9DCDD7CC29EC974700453483 /* handlers.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = handlers.py; sourceTree = "<group>"; };
+		9DCDD7CD29EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD7CE29EC974700453483 /* types.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = types.py; sourceTree = "<group>"; };
+		9DCDD7CF29EC974700453483 /* validate.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = validate.py; sourceTree = "<group>"; };
+		9DCDD7D029EC974700453483 /* simple_server.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = simple_server.py; sourceTree = "<group>"; };
+		9DCDD7D129EC974700453483 /* headers.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = headers.py; sourceTree = "<group>"; };
+		9DCDD7D229EC974700453483 /* poplib.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = poplib.py; sourceTree = "<group>"; };
+		9DCDD7D329EC974700453483 /* plistlib.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = plistlib.py; sourceTree = "<group>"; };
+		9DCDD7D429EC974700453483 /* pickletools.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = pickletools.py; sourceTree = "<group>"; };
+		9DCDD7D529EC974700453483 /* pipes.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = pipes.py; sourceTree = "<group>"; };
+		9DCDD7D629EC974700453483 /* site.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = site.py; sourceTree = "<group>"; };
+		9DCDD7D829EC974700453483 /* decoder.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = decoder.py; sourceTree = "<group>"; };
+		9DCDD7D929EC974700453483 /* scanner.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = scanner.py; sourceTree = "<group>"; };
+		9DCDD7DA29EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD7DB29EC974700453483 /* encoder.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = encoder.py; sourceTree = "<group>"; };
+		9DCDD7DC29EC974700453483 /* tool.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = tool.py; sourceTree = "<group>"; };
+		9DCDD7DD29EC974700453483 /* telnetlib.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = telnetlib.py; sourceTree = "<group>"; };
+		9DCDD7DE29EC974700453483 /* keyword.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = keyword.py; sourceTree = "<group>"; };
+		9DCDD7DF29EC974700453483 /* configparser.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = configparser.py; sourceTree = "<group>"; };
+		9DCDD7E029EC974700453483 /* reprlib.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = reprlib.py; sourceTree = "<group>"; };
+		9DCDD7E129EC974700453483 /* secrets.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = secrets.py; sourceTree = "<group>"; };
+		9DCDD7E229EC974700453483 /* shlex.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = shlex.py; sourceTree = "<group>"; };
+		9DCDD7E429EC974700453483 /* cookies.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cookies.py; sourceTree = "<group>"; };
+		9DCDD7E529EC974700453483 /* server.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = server.py; sourceTree = "<group>"; };
+		9DCDD7E629EC974700453483 /* client.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = client.py; sourceTree = "<group>"; };
+		9DCDD7E729EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD7E829EC974700453483 /* cookiejar.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cookiejar.py; sourceTree = "<group>"; };
+		9DCDD7EA29EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD7EB29EC974700453483 /* dump.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = dump.py; sourceTree = "<group>"; };
+		9DCDD7EC29EC974700453483 /* dbapi2.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = dbapi2.py; sourceTree = "<group>"; };
+		9DCDD7ED29EC974700453483 /* posixpath.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = posixpath.py; sourceTree = "<group>"; };
+		9DCDD7EE29EC974700453483 /* py_compile.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = py_compile.py; sourceTree = "<group>"; };
+		9DCDD7EF29EC974700453483 /* _osx_support.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _osx_support.py; sourceTree = "<group>"; };
+		9DCDD7F029EC974700453483 /* stat.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = stat.py; sourceTree = "<group>"; };
+		9DCDD7F129EC974700453483 /* compileall.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = compileall.py; sourceTree = "<group>"; };
+		9DCDD7F429EC974700453483 /* _base.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _base.py; sourceTree = "<group>"; };
+		9DCDD7F529EC974700453483 /* thread.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = thread.py; sourceTree = "<group>"; };
+		9DCDD7F629EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD7F729EC974700453483 /* process.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = process.py; sourceTree = "<group>"; };
+		9DCDD7F829EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD7F929EC974700453483 /* csv.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = csv.py; sourceTree = "<group>"; };
+		9DCDD7FA29EC974700453483 /* fractions.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fractions.py; sourceTree = "<group>"; };
+		9DCDD7FB29EC974700453483 /* sched.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = sched.py; sourceTree = "<group>"; };
+		9DCDD7FC29EC974700453483 /* imaplib.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = imaplib.py; sourceTree = "<group>"; };
+		9DCDD7FD29EC974700453483 /* mailbox.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = mailbox.py; sourceTree = "<group>"; };
+		9DCDD7FE29EC974700453483 /* sre_compile.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = sre_compile.py; sourceTree = "<group>"; };
+		9DCDD7FF29EC974700453483 /* locale.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = locale.py; sourceTree = "<group>"; };
+		9DCDD80029EC974700453483 /* ast.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = ast.py; sourceTree = "<group>"; };
+		9DCDD80129EC974700453483 /* doctest.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = doctest.py; sourceTree = "<group>"; };
+		9DCDD80229EC974700453483 /* argparse.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = argparse.py; sourceTree = "<group>"; };
+		9DCDD80329EC974700453483 /* getpass.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = getpass.py; sourceTree = "<group>"; };
+		9DCDD80429EC974700453483 /* pickle.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = pickle.py; sourceTree = "<group>"; };
+		9DCDD80529EC974700453483 /* pty.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = pty.py; sourceTree = "<group>"; };
+		9DCDD80629EC974700453483 /* contextlib.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = contextlib.py; sourceTree = "<group>"; };
+		9DCDD80729EC974700453483 /* statistics.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = statistics.py; sourceTree = "<group>"; };
+		9DCDD80829EC974700453483 /* _collections_abc.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _collections_abc.py; sourceTree = "<group>"; };
+		9DCDD80929EC974700453483 /* sunau.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = sunau.py; sourceTree = "<group>"; };
+		9DCDD80A29EC974700453483 /* __future__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __future__.py; sourceTree = "<group>"; };
+		9DCDD80B29EC974700453483 /* dataclasses.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = dataclasses.py; sourceTree = "<group>"; };
+		9DCDD80C29EC974700453483 /* shelve.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = shelve.py; sourceTree = "<group>"; };
+		9DCDD80D29EC974700453483 /* string.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = string.py; sourceTree = "<group>"; };
+		9DCDD80E29EC974700453483 /* smtplib.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = smtplib.py; sourceTree = "<group>"; };
+		9DCDD81029EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD81329EC974700453483 /* activate.fish */ = {isa = PBXFileReference; lastKnownFileType = text; path = activate.fish; sourceTree = "<group>"; };
+		9DCDD81429EC974700453483 /* activate.csh */ = {isa = PBXFileReference; lastKnownFileType = text.script.csh; path = activate.csh; sourceTree = "<group>"; };
+		9DCDD81629EC974700453483 /* Activate.ps1 */ = {isa = PBXFileReference; lastKnownFileType = text; path = Activate.ps1; sourceTree = "<group>"; };
+		9DCDD81729EC974700453483 /* activate */ = {isa = PBXFileReference; lastKnownFileType = text; path = activate; sourceTree = "<group>"; };
+		9DCDD81829EC974700453483 /* __main__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __main__.py; sourceTree = "<group>"; };
+		9DCDD81929EC974700453483 /* getopt.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = getopt.py; sourceTree = "<group>"; };
+		9DCDD81A29EC974700453483 /* antigravity.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = antigravity.py; sourceTree = "<group>"; };
+		9DCDD81B29EC974700453483 /* enum.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = enum.py; sourceTree = "<group>"; };
+		9DCDD81D29EC974700453483 /* ndbm.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = ndbm.py; sourceTree = "<group>"; };
+		9DCDD81E29EC974700453483 /* gnu.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = gnu.py; sourceTree = "<group>"; };
+		9DCDD81F29EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD82029EC974700453483 /* dumb.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = dumb.py; sourceTree = "<group>"; };
+		9DCDD82129EC974700453483 /* timeit.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = timeit.py; sourceTree = "<group>"; };
+		9DCDD82229EC974700453483 /* graphlib.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = graphlib.py; sourceTree = "<group>"; };
+		9DCDD82329EC974700453483 /* hmac.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = hmac.py; sourceTree = "<group>"; };
+		9DCDD82429EC974700453483 /* tarfile.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = tarfile.py; sourceTree = "<group>"; };
+		9DCDD82629EC974700453483 /* readers.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = readers.py; sourceTree = "<group>"; };
+		9DCDD82729EC974700453483 /* _abc.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _abc.py; sourceTree = "<group>"; };
+		9DCDD82829EC974700453483 /* util.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = util.py; sourceTree = "<group>"; };
+		9DCDD82929EC974700453483 /* _bootstrap.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _bootstrap.py; sourceTree = "<group>"; };
+		9DCDD82B29EC974700453483 /* readers.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = readers.py; sourceTree = "<group>"; };
+		9DCDD82C29EC974700453483 /* _common.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _common.py; sourceTree = "<group>"; };
+		9DCDD82D29EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD82E29EC974700453483 /* _itertools.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _itertools.py; sourceTree = "<group>"; };
+		9DCDD82F29EC974700453483 /* _adapters.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _adapters.py; sourceTree = "<group>"; };
+		9DCDD83029EC974700453483 /* _legacy.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _legacy.py; sourceTree = "<group>"; };
+		9DCDD83129EC974700453483 /* simple.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = simple.py; sourceTree = "<group>"; };
+		9DCDD83229EC974700453483 /* abc.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = abc.py; sourceTree = "<group>"; };
+		9DCDD83329EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD83429EC974700453483 /* _bootstrap_external.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _bootstrap_external.py; sourceTree = "<group>"; };
+		9DCDD83529EC974700453483 /* machinery.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = machinery.py; sourceTree = "<group>"; };
+		9DCDD83629EC974700453483 /* simple.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = simple.py; sourceTree = "<group>"; };
+		9DCDD83829EC974700453483 /* _meta.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _meta.py; sourceTree = "<group>"; };
+		9DCDD83929EC974700453483 /* _text.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _text.py; sourceTree = "<group>"; };
+		9DCDD83A29EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD83B29EC974700453483 /* _functools.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _functools.py; sourceTree = "<group>"; };
+		9DCDD83C29EC974700453483 /* _collections.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _collections.py; sourceTree = "<group>"; };
+		9DCDD83D29EC974700453483 /* _itertools.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _itertools.py; sourceTree = "<group>"; };
+		9DCDD83E29EC974700453483 /* _adapters.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _adapters.py; sourceTree = "<group>"; };
+		9DCDD83F29EC974700453483 /* abc.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = abc.py; sourceTree = "<group>"; };
+		9DCDD84129EC974700453483 /* server.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = server.py; sourceTree = "<group>"; };
+		9DCDD84229EC974700453483 /* client.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = client.py; sourceTree = "<group>"; };
+		9DCDD84329EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD84429EC974700453483 /* stringprep.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = stringprep.py; sourceTree = "<group>"; };
+		9DCDD84529EC974700453483 /* typing.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = typing.py; sourceTree = "<group>"; };
+		9DCDD84629EC974700453483 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		9DCDD84929EC974700453483 /* fix_throw.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_throw.py; sourceTree = "<group>"; };
+		9DCDD84A29EC974700453483 /* fix_print.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_print.py; sourceTree = "<group>"; };
+		9DCDD84B29EC974700453483 /* fix_input.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_input.py; sourceTree = "<group>"; };
+		9DCDD84C29EC974700453483 /* fix_buffer.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_buffer.py; sourceTree = "<group>"; };
+		9DCDD84D29EC974700453483 /* fix_paren.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_paren.py; sourceTree = "<group>"; };
+		9DCDD84E29EC974700453483 /* fix_exec.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_exec.py; sourceTree = "<group>"; };
+		9DCDD84F29EC974700453483 /* fix_filter.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_filter.py; sourceTree = "<group>"; };
+		9DCDD85029EC974700453483 /* fix_unicode.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_unicode.py; sourceTree = "<group>"; };
+		9DCDD85129EC974700453483 /* fix_ne.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_ne.py; sourceTree = "<group>"; };
+		9DCDD85229EC974700453483 /* fix_nonzero.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_nonzero.py; sourceTree = "<group>"; };
+		9DCDD85329EC974700453483 /* fix_sys_exc.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_sys_exc.py; sourceTree = "<group>"; };
+		9DCDD85429EC974700453483 /* fix_zip.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_zip.py; sourceTree = "<group>"; };
+		9DCDD85529EC974700453483 /* fix_map.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_map.py; sourceTree = "<group>"; };
+		9DCDD85629EC974700453483 /* fix_imports2.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_imports2.py; sourceTree = "<group>"; };
+		9DCDD85729EC974700453483 /* fix_metaclass.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_metaclass.py; sourceTree = "<group>"; };
+		9DCDD85829EC974700453483 /* fix_except.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_except.py; sourceTree = "<group>"; };
+		9DCDD85929EC974700453483 /* fix_apply.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_apply.py; sourceTree = "<group>"; };
+		9DCDD85A29EC974700453483 /* fix_set_literal.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_set_literal.py; sourceTree = "<group>"; };
+		9DCDD85B29EC974700453483 /* fix_getcwdu.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_getcwdu.py; sourceTree = "<group>"; };
+		9DCDD85C29EC974700453483 /* fix_urllib.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_urllib.py; sourceTree = "<group>"; };
+		9DCDD85D29EC974700453483 /* fix_future.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_future.py; sourceTree = "<group>"; };
+		9DCDD85E29EC974700453483 /* fix_operator.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_operator.py; sourceTree = "<group>"; };
+		9DCDD85F29EC974700453483 /* fix_imports.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_imports.py; sourceTree = "<group>"; };
+		9DCDD86029EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD86129EC974700453483 /* fix_standarderror.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_standarderror.py; sourceTree = "<group>"; };
+		9DCDD86229EC974700453483 /* fix_renames.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_renames.py; sourceTree = "<group>"; };
+		9DCDD86329EC974700453483 /* fix_tuple_params.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_tuple_params.py; sourceTree = "<group>"; };
+		9DCDD86429EC974700453483 /* fix_idioms.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_idioms.py; sourceTree = "<group>"; };
+		9DCDD86529EC974700453483 /* fix_raw_input.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_raw_input.py; sourceTree = "<group>"; };
+		9DCDD86629EC974700453483 /* fix_methodattrs.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_methodattrs.py; sourceTree = "<group>"; };
+		9DCDD86729EC974700453483 /* fix_itertools_imports.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_itertools_imports.py; sourceTree = "<group>"; };
+		9DCDD86829EC974700453483 /* fix_long.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_long.py; sourceTree = "<group>"; };
+		9DCDD86929EC974700453483 /* fix_raise.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_raise.py; sourceTree = "<group>"; };
+		9DCDD86A29EC974700453483 /* fix_dict.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_dict.py; sourceTree = "<group>"; };
+		9DCDD86B29EC974700453483 /* fix_reload.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_reload.py; sourceTree = "<group>"; };
+		9DCDD86C29EC974700453483 /* fix_funcattrs.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_funcattrs.py; sourceTree = "<group>"; };
+		9DCDD86D29EC974700453483 /* fix_reduce.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_reduce.py; sourceTree = "<group>"; };
+		9DCDD86E29EC974700453483 /* fix_intern.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_intern.py; sourceTree = "<group>"; };
+		9DCDD86F29EC974700453483 /* fix_import.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_import.py; sourceTree = "<group>"; };
+		9DCDD87029EC974700453483 /* fix_next.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_next.py; sourceTree = "<group>"; };
+		9DCDD87129EC974700453483 /* fix_basestring.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_basestring.py; sourceTree = "<group>"; };
+		9DCDD87229EC974700453483 /* fix_asserts.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_asserts.py; sourceTree = "<group>"; };
+		9DCDD87329EC974700453483 /* fix_execfile.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_execfile.py; sourceTree = "<group>"; };
+		9DCDD87429EC974700453483 /* fix_has_key.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_has_key.py; sourceTree = "<group>"; };
+		9DCDD87529EC974700453483 /* fix_repr.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_repr.py; sourceTree = "<group>"; };
+		9DCDD87629EC974700453483 /* fix_numliterals.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_numliterals.py; sourceTree = "<group>"; };
+		9DCDD87729EC974700453483 /* fix_isinstance.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_isinstance.py; sourceTree = "<group>"; };
+		9DCDD87829EC974700453483 /* fix_types.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_types.py; sourceTree = "<group>"; };
+		9DCDD87929EC974700453483 /* fix_xreadlines.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_xreadlines.py; sourceTree = "<group>"; };
+		9DCDD87A29EC974700453483 /* fix_itertools.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_itertools.py; sourceTree = "<group>"; };
+		9DCDD87B29EC974700453483 /* fix_exitfunc.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_exitfunc.py; sourceTree = "<group>"; };
+		9DCDD87C29EC974700453483 /* fix_ws_comma.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_ws_comma.py; sourceTree = "<group>"; };
+		9DCDD87D29EC974700453483 /* fix_xrange.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fix_xrange.py; sourceTree = "<group>"; };
+		9DCDD87E29EC974700453483 /* Grammar.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Grammar.txt; sourceTree = "<group>"; };
+		9DCDD87F29EC974700453483 /* Grammar3.11.0.final.0.pickle */ = {isa = PBXFileReference; lastKnownFileType = file; path = Grammar3.11.0.final.0.pickle; sourceTree = "<group>"; };
+		9DCDD88029EC974700453483 /* refactor.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = refactor.py; sourceTree = "<group>"; };
+		9DCDD88129EC974700453483 /* fixer_base.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fixer_base.py; sourceTree = "<group>"; };
+		9DCDD88229EC974700453483 /* PatternGrammar.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = PatternGrammar.txt; sourceTree = "<group>"; };
+		9DCDD88329EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD88429EC974700453483 /* btm_utils.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = btm_utils.py; sourceTree = "<group>"; };
+		9DCDD88529EC974700453483 /* pygram.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = pygram.py; sourceTree = "<group>"; };
+		9DCDD88629EC974700453483 /* patcomp.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = patcomp.py; sourceTree = "<group>"; };
+		9DCDD88729EC974700453483 /* main.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = main.py; sourceTree = "<group>"; };
+		9DCDD88929EC974700453483 /* token.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = token.py; sourceTree = "<group>"; };
+		9DCDD88A29EC974700453483 /* pgen.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = pgen.py; sourceTree = "<group>"; };
+		9DCDD88B29EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD88C29EC974700453483 /* literals.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = literals.py; sourceTree = "<group>"; };
+		9DCDD88D29EC974700453483 /* grammar.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = grammar.py; sourceTree = "<group>"; };
+		9DCDD88E29EC974700453483 /* conv.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = conv.py; sourceTree = "<group>"; };
+		9DCDD88F29EC974700453483 /* parse.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = parse.py; sourceTree = "<group>"; };
+		9DCDD89029EC974700453483 /* driver.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = driver.py; sourceTree = "<group>"; };
+		9DCDD89129EC974700453483 /* tokenize.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = tokenize.py; sourceTree = "<group>"; };
+		9DCDD89229EC974700453483 /* PatternGrammar3.11.0.final.0.pickle */ = {isa = PBXFileReference; lastKnownFileType = file; path = PatternGrammar3.11.0.final.0.pickle; sourceTree = "<group>"; };
+		9DCDD89329EC974700453483 /* __main__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __main__.py; sourceTree = "<group>"; };
+		9DCDD89429EC974700453483 /* fixer_util.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = fixer_util.py; sourceTree = "<group>"; };
+		9DCDD89529EC974700453483 /* btm_matcher.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = btm_matcher.py; sourceTree = "<group>"; };
+		9DCDD89629EC974700453483 /* pytree.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = pytree.py; sourceTree = "<group>"; };
+		9DCDD89829EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD89929EC974700453483 /* _pydoc.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = _pydoc.css; sourceTree = "<group>"; };
+		9DCDD89A29EC974700453483 /* topics.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = topics.py; sourceTree = "<group>"; };
+		9DCDD89B29EC974700453483 /* ssl.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = ssl.py; sourceTree = "<group>"; };
+		9DCDD89C29EC974700453483 /* socket.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = socket.py; sourceTree = "<group>"; };
+		9DCDD89D29EC974700453483 /* datetime.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = datetime.py; sourceTree = "<group>"; };
+		9DCDD89E29EC974700453483 /* sysconfig.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = sysconfig.py; sourceTree = "<group>"; };
+		9DCDD8A029EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD8A129EC974700453483 /* abc.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = abc.py; sourceTree = "<group>"; };
+		9DCDD8A229EC974700453483 /* pathlib.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = pathlib.py; sourceTree = "<group>"; };
+		9DCDD8A329EC974700453483 /* _pydecimal.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _pydecimal.py; sourceTree = "<group>"; };
+		9DCDD8A429EC974700453483 /* ntpath.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = ntpath.py; sourceTree = "<group>"; };
+		9DCDD8A529EC974700453483 /* tokenize.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = tokenize.py; sourceTree = "<group>"; };
+		9DCDD8A629EC974700453483 /* uuid.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = uuid.py; sourceTree = "<group>"; };
+		9DCDD8A829EC974700453483 /* mixins.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = mixins.py; sourceTree = "<group>"; };
+		9DCDD8A929EC974700453483 /* queues.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = queues.py; sourceTree = "<group>"; };
+		9DCDD8AA29EC974700453483 /* streams.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = streams.py; sourceTree = "<group>"; };
+		9DCDD8AB29EC974700453483 /* tasks.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = tasks.py; sourceTree = "<group>"; };
+		9DCDD8AC29EC974700453483 /* selector_events.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = selector_events.py; sourceTree = "<group>"; };
+		9DCDD8AD29EC974700453483 /* log.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = log.py; sourceTree = "<group>"; };
+		9DCDD8AE29EC974700453483 /* taskgroups.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = taskgroups.py; sourceTree = "<group>"; };
+		9DCDD8AF29EC974700453483 /* protocols.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = protocols.py; sourceTree = "<group>"; };
+		9DCDD8B029EC974700453483 /* events.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = events.py; sourceTree = "<group>"; };
+		9DCDD8B129EC974700453483 /* base_events.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = base_events.py; sourceTree = "<group>"; };
+		9DCDD8B229EC974700453483 /* subprocess.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = subprocess.py; sourceTree = "<group>"; };
+		9DCDD8B329EC974700453483 /* constants.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = constants.py; sourceTree = "<group>"; };
+		9DCDD8B429EC974700453483 /* proactor_events.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = proactor_events.py; sourceTree = "<group>"; };
+		9DCDD8B529EC974700453483 /* format_helpers.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = format_helpers.py; sourceTree = "<group>"; };
+		9DCDD8B629EC974700453483 /* locks.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = locks.py; sourceTree = "<group>"; };
+		9DCDD8B729EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD8B829EC974700453483 /* timeouts.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = timeouts.py; sourceTree = "<group>"; };
+		9DCDD8B929EC974700453483 /* trsock.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = trsock.py; sourceTree = "<group>"; };
+		9DCDD8BA29EC974700453483 /* futures.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = futures.py; sourceTree = "<group>"; };
+		9DCDD8BB29EC974700453483 /* sslproto.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = sslproto.py; sourceTree = "<group>"; };
+		9DCDD8BC29EC974700453483 /* staggered.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = staggered.py; sourceTree = "<group>"; };
+		9DCDD8BD29EC974700453483 /* threads.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = threads.py; sourceTree = "<group>"; };
+		9DCDD8BE29EC974700453483 /* base_subprocess.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = base_subprocess.py; sourceTree = "<group>"; };
+		9DCDD8BF29EC974700453483 /* windows_utils.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = windows_utils.py; sourceTree = "<group>"; };
+		9DCDD8C029EC974700453483 /* runners.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = runners.py; sourceTree = "<group>"; };
+		9DCDD8C129EC974700453483 /* exceptions.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = exceptions.py; sourceTree = "<group>"; };
+		9DCDD8C229EC974700453483 /* transports.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = transports.py; sourceTree = "<group>"; };
+		9DCDD8C329EC974700453483 /* base_tasks.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = base_tasks.py; sourceTree = "<group>"; };
+		9DCDD8C429EC974700453483 /* coroutines.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = coroutines.py; sourceTree = "<group>"; };
+		9DCDD8C529EC974700453483 /* windows_events.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = windows_events.py; sourceTree = "<group>"; };
+		9DCDD8C629EC974700453483 /* base_futures.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = base_futures.py; sourceTree = "<group>"; };
+		9DCDD8C729EC974700453483 /* __main__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __main__.py; sourceTree = "<group>"; };
+		9DCDD8C829EC974700453483 /* unix_events.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = unix_events.py; sourceTree = "<group>"; };
+		9DCDD8CA29EC974700453483 /* config.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = config.py; sourceTree = "<group>"; };
+		9DCDD8CB29EC974700453483 /* handlers.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = handlers.py; sourceTree = "<group>"; };
+		9DCDD8CC29EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD8CD29EC974700453483 /* __hello__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __hello__.py; sourceTree = "<group>"; };
+		9DCDD8CE29EC974700453483 /* imp.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = imp.py; sourceTree = "<group>"; };
+		9DCDD8CF29EC974700453483 /* smtpd.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = smtpd.py; sourceTree = "<group>"; };
+		9DCDD8D129EC974700453483 /* contentmanager.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = contentmanager.py; sourceTree = "<group>"; };
+		9DCDD8D229EC974700453483 /* _policybase.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _policybase.py; sourceTree = "<group>"; };
+		9DCDD8D329EC974700453483 /* header.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = header.py; sourceTree = "<group>"; };
+		9DCDD8D429EC974700453483 /* _encoded_words.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _encoded_words.py; sourceTree = "<group>"; };
+		9DCDD8D529EC974700453483 /* _header_value_parser.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _header_value_parser.py; sourceTree = "<group>"; };
+		9DCDD8D629EC974700453483 /* policy.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = policy.py; sourceTree = "<group>"; };
+		9DCDD8D729EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD8D829EC974700453483 /* message.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = message.py; sourceTree = "<group>"; };
+		9DCDD8D929EC974700453483 /* encoders.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = encoders.py; sourceTree = "<group>"; };
+		9DCDD8DA29EC974700453483 /* parser.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = parser.py; sourceTree = "<group>"; };
+		9DCDD8DB29EC974700453483 /* generator.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = generator.py; sourceTree = "<group>"; };
+		9DCDD8DC29EC974700453483 /* utils.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = utils.py; sourceTree = "<group>"; };
+		9DCDD8DD29EC974700453483 /* charset.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = charset.py; sourceTree = "<group>"; };
+		9DCDD8DE29EC974700453483 /* iterators.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = iterators.py; sourceTree = "<group>"; };
+		9DCDD8DF29EC974700453483 /* quoprimime.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = quoprimime.py; sourceTree = "<group>"; };
+		9DCDD8E129EC974700453483 /* multipart.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = multipart.py; sourceTree = "<group>"; };
+		9DCDD8E229EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD8E329EC974700453483 /* message.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = message.py; sourceTree = "<group>"; };
+		9DCDD8E429EC974700453483 /* application.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = application.py; sourceTree = "<group>"; };
+		9DCDD8E529EC974700453483 /* nonmultipart.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = nonmultipart.py; sourceTree = "<group>"; };
+		9DCDD8E629EC974700453483 /* text.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = text.py; sourceTree = "<group>"; };
+		9DCDD8E729EC974700453483 /* audio.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = audio.py; sourceTree = "<group>"; };
+		9DCDD8E829EC974700453483 /* image.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = image.py; sourceTree = "<group>"; };
+		9DCDD8E929EC974700453483 /* base.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = base.py; sourceTree = "<group>"; };
+		9DCDD8EA29EC974700453483 /* errors.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = errors.py; sourceTree = "<group>"; };
+		9DCDD8EB29EC974700453483 /* feedparser.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = feedparser.py; sourceTree = "<group>"; };
+		9DCDD8EC29EC974700453483 /* architecture.rst */ = {isa = PBXFileReference; lastKnownFileType = text; path = architecture.rst; sourceTree = "<group>"; };
+		9DCDD8ED29EC974700453483 /* _parseaddr.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _parseaddr.py; sourceTree = "<group>"; };
+		9DCDD8EE29EC974700453483 /* base64mime.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = base64mime.py; sourceTree = "<group>"; };
+		9DCDD8EF29EC974700453483 /* headerregistry.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = headerregistry.py; sourceTree = "<group>"; };
+		9DCDD8F029EC974700453483 /* mailcap.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = mailcap.py; sourceTree = "<group>"; };
+		9DCDD8F129EC974700453483 /* aifc.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = aifc.py; sourceTree = "<group>"; };
+		9DCDD8F229EC974700453483 /* struct.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = struct.py; sourceTree = "<group>"; };
+		9DCDD8F329EC974700453483 /* asynchat.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = asynchat.py; sourceTree = "<group>"; };
+		9DCDD8F529EC974700453483 /* _constants.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _constants.py; sourceTree = "<group>"; };
+		9DCDD8F629EC974700453483 /* _compiler.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _compiler.py; sourceTree = "<group>"; };
+		9DCDD8F729EC974700453483 /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		9DCDD8F829EC974700453483 /* _casefix.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _casefix.py; sourceTree = "<group>"; };
+		9DCDD8F929EC974700453483 /* _parser.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = _parser.py; sourceTree = "<group>"; };
+		9DCDD8FA29EC974700453483 /* sre_parse.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = sre_parse.py; sourceTree = "<group>"; };
+		9DCDD8FB29EC974700453483 /* abc.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = abc.py; sourceTree = "<group>"; };
+		9DCDD8FC29EC974700453483 /* runpy.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = runpy.py; sourceTree = "<group>"; };
+		9DCDDF0229EC9A0400453483 /* python-stdlib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "python-stdlib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +781,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DAED8A929EC8D3500B23231 /* PythonKit in Frameworks */,
+				9DAEE7D729EC8FE600B23231 /* SystemConfiguration.framework in Frameworks */,
+				9DAEE7D329EC8FC900B23231 /* Python.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +792,10 @@
 		9DAED88C29EC8CDB00B23231 = {
 			isa = PBXGroup;
 			children = (
+				9DCDD5E329EC974700453483 /* python-stdlib */,
 				9DAED89729EC8CDB00B23231 /* MacAutoGPT */,
 				9DAED89629EC8CDB00B23231 /* Products */,
+				9DAEE4B729EC8FB500B23231 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +827,1145 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		9DAEE4B729EC8FB500B23231 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDDF0229EC9A0400453483 /* python-stdlib */,
+				9DAEE7D629EC8FE600B23231 /* SystemConfiguration.framework */,
+				9DAEE4B829EC8FB500B23231 /* Python.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9DCDD5E329EC974700453483 /* python-stdlib */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD5E429EC974700453483 /* zipfile.py */,
+				9DCDD5E529EC974700453483 /* shutil.py */,
+				9DCDD5E629EC974700453483 /* tempfile.py */,
+				9DCDD5E729EC974700453483 /* lib-dynload */,
+				9DCDD62929EC974700453483 /* encodings */,
+				9DCDD6A429EC974700453483 /* queue.py */,
+				9DCDD6A529EC974700453483 /* _pyio.py */,
+				9DCDD6A629EC974700453483 /* crypt.py */,
+				9DCDD6A729EC974700453483 /* pkgutil.py */,
+				9DCDD6A829EC974700453483 /* distutils */,
+				9DCDD6DD29EC974700453483 /* lzma.py */,
+				9DCDD6DE29EC974700453483 /* asyncore.py */,
+				9DCDD6DF29EC974700453483 /* _sitebuiltins.py */,
+				9DCDD6E029EC974700453483 /* _bootsubprocess.py */,
+				9DCDD6E129EC974700453483 /* copyreg.py */,
+				9DCDD6E229EC974700453483 /* sndhdr.py */,
+				9DCDD6E329EC974700453483 /* rlcompleter.py */,
+				9DCDD6E429EC974700453483 /* zoneinfo */,
+				9DCDD6E929EC974700453483 /* gzip.py */,
+				9DCDD6EA29EC974700453483 /* ctypes */,
+				9DCDD6F829EC974700453483 /* ipaddress.py */,
+				9DCDD6F929EC974700453483 /* trace.py */,
+				9DCDD6FA29EC974700453483 /* webbrowser.py */,
+				9DCDD6FB29EC974700453483 /* nntplib.py */,
+				9DCDD6FC29EC974700453483 /* _compat_pickle.py */,
+				9DCDD6FD29EC974700453483 /* unittest */,
+				9DCDD72B29EC974700453483 /* dis.py */,
+				9DCDD72C29EC974700453483 /* bdb.py */,
+				9DCDD72D29EC974700453483 /* zipapp.py */,
+				9DCDD72E29EC974700453483 /* cmd.py */,
+				9DCDD72F29EC974700453483 /* tty.py */,
+				9DCDD73029EC974700453483 /* curses */,
+				9DCDD73629EC974700453483 /* tabnanny.py */,
+				9DCDD73729EC974700453483 /* _py_abc.py */,
+				9DCDD73829EC974700453483 /* cProfile.py */,
+				9DCDD73929EC974700453483 /* zipimport.py */,
+				9DCDD73A29EC974700453483 /* token.py */,
+				9DCDD73B29EC974700453483 /* textwrap.py */,
+				9DCDD73C29EC974700453483 /* base64.py */,
+				9DCDD73D29EC974700453483 /* _markupbase.py */,
+				9DCDD73E29EC974700453483 /* bz2.py */,
+				9DCDD73F29EC974700453483 /* tomllib */,
+				9DCDD74429EC974700453483 /* signal.py */,
+				9DCDD74529EC974700453483 /* sre_constants.py */,
+				9DCDD74629EC974700453483 /* cgitb.py */,
+				9DCDD74729EC974700453483 /* _aix_support.py */,
+				9DCDD74829EC974700453483 /* _threading_local.py */,
+				9DCDD74929EC974700453483 /* pyclbr.py */,
+				9DCDD74A29EC974700453483 /* gettext.py */,
+				9DCDD74B29EC974700453483 /* __phello__ */,
+				9DCDD74E29EC974700453483 /* _ios_support.py */,
+				9DCDD74F29EC974700453483 /* wave.py */,
+				9DCDD75029EC974700453483 /* weakref.py */,
+				9DCDD75129EC974700453483 /* bisect.py */,
+				9DCDD75229EC974700453483 /* opcode.py */,
+				9DCDD75329EC974700453483 /* netrc.py */,
+				9DCDD75429EC974700453483 /* heapq.py */,
+				9DCDD75529EC974700453483 /* functools.py */,
+				9DCDD75629EC974700453483 /* modulefinder.py */,
+				9DCDD75729EC974700453483 /* _compression.py */,
+				9DCDD75829EC974700453483 /* tracemalloc.py */,
+				9DCDD75929EC974700453483 /* hashlib.py */,
+				9DCDD75A29EC974700453483 /* cgi.py */,
+				9DCDD75B29EC974700453483 /* codeop.py */,
+				9DCDD75C29EC974700453483 /* fnmatch.py */,
+				9DCDD75D29EC974700453483 /* multiprocessing */,
+				9DCDD77629EC974700453483 /* traceback.py */,
+				9DCDD77729EC974700453483 /* nturl2path.py */,
+				9DCDD77829EC974700453483 /* warnings.py */,
+				9DCDD77929EC974700453483 /* subprocess.py */,
+				9DCDD77A29EC974700453483 /* profile.py */,
+				9DCDD77B29EC974700453483 /* imghdr.py */,
+				9DCDD77C29EC974700453483 /* this.py */,
+				9DCDD77D29EC974700453483 /* filecmp.py */,
+				9DCDD77E29EC974700453483 /* codecs.py */,
+				9DCDD77F29EC974700453483 /* urllib */,
+				9DCDD78629EC974700453483 /* uu.py */,
+				9DCDD78729EC974700453483 /* _weakrefset.py */,
+				9DCDD78829EC974700453483 /* io.py */,
+				9DCDD78929EC974700453483 /* _sysconfigdata__darwin_darwin.py */,
+				9DCDD78A29EC974700453483 /* code.py */,
+				9DCDD78B29EC974700453483 /* operator.py */,
+				9DCDD78C29EC974700453483 /* fileinput.py */,
+				9DCDD78D29EC974700453483 /* os.py */,
+				9DCDD78E29EC974700453483 /* difflib.py */,
+				9DCDD78F29EC974700453483 /* pydoc.py */,
+				9DCDD79029EC974700453483 /* selectors.py */,
+				9DCDD79129EC974700453483 /* decimal.py */,
+				9DCDD79229EC974700453483 /* socketserver.py */,
+				9DCDD79329EC974700453483 /* copy.py */,
+				9DCDD79429EC974700453483 /* html */,
+				9DCDD79829EC974700453483 /* genericpath.py */,
+				9DCDD79929EC974700453483 /* linecache.py */,
+				9DCDD79A29EC974700453483 /* types.py */,
+				9DCDD79B29EC974700453483 /* mimetypes.py */,
+				9DCDD79C29EC974700453483 /* xdrlib.py */,
+				9DCDD79D29EC974700453483 /* colorsys.py */,
+				9DCDD79E29EC974700453483 /* numbers.py */,
+				9DCDD79F29EC974700453483 /* _strptime.py */,
+				9DCDD7A029EC974700453483 /* contextvars.py */,
+				9DCDD7A129EC974700453483 /* random.py */,
+				9DCDD7A229EC974700453483 /* ftplib.py */,
+				9DCDD7A329EC974700453483 /* chunk.py */,
+				9DCDD7A429EC974700453483 /* optparse.py */,
+				9DCDD7A529EC974700453483 /* xml */,
+				9DCDD7C029EC974700453483 /* pdb.py */,
+				9DCDD7C129EC974700453483 /* threading.py */,
+				9DCDD7C229EC974700453483 /* platform.py */,
+				9DCDD7C329EC974700453483 /* pstats.py */,
+				9DCDD7C429EC974700453483 /* glob.py */,
+				9DCDD7C529EC974700453483 /* quopri.py */,
+				9DCDD7C629EC974700453483 /* symtable.py */,
+				9DCDD7C729EC974700453483 /* pprint.py */,
+				9DCDD7C829EC974700453483 /* calendar.py */,
+				9DCDD7C929EC974700453483 /* inspect.py */,
+				9DCDD7CA29EC974700453483 /* wsgiref */,
+				9DCDD7D229EC974700453483 /* poplib.py */,
+				9DCDD7D329EC974700453483 /* plistlib.py */,
+				9DCDD7D429EC974700453483 /* pickletools.py */,
+				9DCDD7D529EC974700453483 /* pipes.py */,
+				9DCDD7D629EC974700453483 /* site.py */,
+				9DCDD7D729EC974700453483 /* json */,
+				9DCDD7DD29EC974700453483 /* telnetlib.py */,
+				9DCDD7DE29EC974700453483 /* keyword.py */,
+				9DCDD7DF29EC974700453483 /* configparser.py */,
+				9DCDD7E029EC974700453483 /* reprlib.py */,
+				9DCDD7E129EC974700453483 /* secrets.py */,
+				9DCDD7E229EC974700453483 /* shlex.py */,
+				9DCDD7E329EC974700453483 /* http */,
+				9DCDD7E929EC974700453483 /* sqlite3 */,
+				9DCDD7ED29EC974700453483 /* posixpath.py */,
+				9DCDD7EE29EC974700453483 /* py_compile.py */,
+				9DCDD7EF29EC974700453483 /* _osx_support.py */,
+				9DCDD7F029EC974700453483 /* stat.py */,
+				9DCDD7F129EC974700453483 /* compileall.py */,
+				9DCDD7F229EC974700453483 /* concurrent */,
+				9DCDD7F929EC974700453483 /* csv.py */,
+				9DCDD7FA29EC974700453483 /* fractions.py */,
+				9DCDD7FB29EC974700453483 /* sched.py */,
+				9DCDD7FC29EC974700453483 /* imaplib.py */,
+				9DCDD7FD29EC974700453483 /* mailbox.py */,
+				9DCDD7FE29EC974700453483 /* sre_compile.py */,
+				9DCDD7FF29EC974700453483 /* locale.py */,
+				9DCDD80029EC974700453483 /* ast.py */,
+				9DCDD80129EC974700453483 /* doctest.py */,
+				9DCDD80229EC974700453483 /* argparse.py */,
+				9DCDD80329EC974700453483 /* getpass.py */,
+				9DCDD80429EC974700453483 /* pickle.py */,
+				9DCDD80529EC974700453483 /* pty.py */,
+				9DCDD80629EC974700453483 /* contextlib.py */,
+				9DCDD80729EC974700453483 /* statistics.py */,
+				9DCDD80829EC974700453483 /* _collections_abc.py */,
+				9DCDD80929EC974700453483 /* sunau.py */,
+				9DCDD80A29EC974700453483 /* __future__.py */,
+				9DCDD80B29EC974700453483 /* dataclasses.py */,
+				9DCDD80C29EC974700453483 /* shelve.py */,
+				9DCDD80D29EC974700453483 /* string.py */,
+				9DCDD80E29EC974700453483 /* smtplib.py */,
+				9DCDD80F29EC974700453483 /* venv */,
+				9DCDD81929EC974700453483 /* getopt.py */,
+				9DCDD81A29EC974700453483 /* antigravity.py */,
+				9DCDD81B29EC974700453483 /* enum.py */,
+				9DCDD81C29EC974700453483 /* dbm */,
+				9DCDD82129EC974700453483 /* timeit.py */,
+				9DCDD82229EC974700453483 /* graphlib.py */,
+				9DCDD82329EC974700453483 /* hmac.py */,
+				9DCDD82429EC974700453483 /* tarfile.py */,
+				9DCDD82529EC974700453483 /* importlib */,
+				9DCDD84029EC974700453483 /* xmlrpc */,
+				9DCDD84429EC974700453483 /* stringprep.py */,
+				9DCDD84529EC974700453483 /* typing.py */,
+				9DCDD84629EC974700453483 /* LICENSE.txt */,
+				9DCDD84729EC974700453483 /* lib2to3 */,
+				9DCDD89729EC974700453483 /* pydoc_data */,
+				9DCDD89B29EC974700453483 /* ssl.py */,
+				9DCDD89C29EC974700453483 /* socket.py */,
+				9DCDD89D29EC974700453483 /* datetime.py */,
+				9DCDD89E29EC974700453483 /* sysconfig.py */,
+				9DCDD89F29EC974700453483 /* collections */,
+				9DCDD8A229EC974700453483 /* pathlib.py */,
+				9DCDD8A329EC974700453483 /* _pydecimal.py */,
+				9DCDD8A429EC974700453483 /* ntpath.py */,
+				9DCDD8A529EC974700453483 /* tokenize.py */,
+				9DCDD8A629EC974700453483 /* uuid.py */,
+				9DCDD8A729EC974700453483 /* asyncio */,
+				9DCDD8C929EC974700453483 /* logging */,
+				9DCDD8CD29EC974700453483 /* __hello__.py */,
+				9DCDD8CE29EC974700453483 /* imp.py */,
+				9DCDD8CF29EC974700453483 /* smtpd.py */,
+				9DCDD8D029EC974700453483 /* email */,
+				9DCDD8F029EC974700453483 /* mailcap.py */,
+				9DCDD8F129EC974700453483 /* aifc.py */,
+				9DCDD8F229EC974700453483 /* struct.py */,
+				9DCDD8F329EC974700453483 /* asynchat.py */,
+				9DCDD8F429EC974700453483 /* re */,
+				9DCDD8FA29EC974700453483 /* sre_parse.py */,
+				9DCDD8FB29EC974700453483 /* abc.py */,
+				9DCDD8FC29EC974700453483 /* runpy.py */,
+			);
+			path = "python-stdlib";
+			sourceTree = "<group>";
+		};
+		9DCDD5E729EC974700453483 /* lib-dynload */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD5E829EC974700453483 /* _sqlite3.cpython-311-darwin.so */,
+				9DCDD5E929EC974700453483 /* _scproxy.cpython-311-darwin.so */,
+				9DCDD5EA29EC974700453483 /* _md5.cpython-311-darwin.so */,
+				9DCDD5EB29EC974700453483 /* _multiprocessing.cpython-311-darwin.so */,
+				9DCDD5EC29EC974700453483 /* _heapq.cpython-311-darwin.so */,
+				9DCDD5ED29EC974700453483 /* _codecs_kr.cpython-311-darwin.so */,
+				9DCDD5EE29EC974700453483 /* _opcode.cpython-311-darwin.so */,
+				9DCDD5EF29EC974700453483 /* _codecs_tw.cpython-311-darwin.so */,
+				9DCDD5F029EC974700453483 /* _uuid.cpython-311-darwin.so */,
+				9DCDD5F129EC974700453483 /* _elementtree.cpython-311-darwin.so */,
+				9DCDD5F229EC974700453483 /* cmath.cpython-311-darwin.so */,
+				9DCDD5F329EC974700453483 /* _crypt.cpython-311-darwin.so */,
+				9DCDD5F429EC974700453483 /* _lsprof.cpython-311-darwin.so */,
+				9DCDD5F529EC974700453483 /* resource.cpython-311-darwin.so */,
+				9DCDD5F629EC974700453483 /* _codecs_hk.cpython-311-darwin.so */,
+				9DCDD5F729EC974700453483 /* audioop.cpython-311-darwin.so */,
+				9DCDD5F829EC974700453483 /* _contextvars.cpython-311-darwin.so */,
+				9DCDD5F929EC974700453483 /* _random.cpython-311-darwin.so */,
+				9DCDD5FA29EC974700453483 /* _json.cpython-311-darwin.so */,
+				9DCDD5FB29EC974700453483 /* binascii.cpython-311-darwin.so */,
+				9DCDD5FC29EC974700453483 /* _datetime.cpython-311-darwin.so */,
+				9DCDD5FD29EC974700453483 /* mmap.cpython-311-darwin.so */,
+				9DCDD5FE29EC974700453483 /* nis.cpython-311-darwin.so */,
+				9DCDD5FF29EC974700453483 /* _bz2.cpython-311-darwin.so */,
+				9DCDD60029EC974700453483 /* _codecs_jp.cpython-311-darwin.so */,
+				9DCDD60129EC974700453483 /* _ctypes.cpython-311-darwin.so */,
+				9DCDD60229EC974700453483 /* math.cpython-311-darwin.so */,
+				9DCDD60329EC974700453483 /* _codecs_iso2022.cpython-311-darwin.so */,
+				9DCDD60429EC974700453483 /* _curses.cpython-311-darwin.so */,
+				9DCDD60529EC974700453483 /* _dbm.cpython-311-darwin.so */,
+				9DCDD60629EC974700453483 /* _ctypes_test.cpython-311-darwin.so */,
+				9DCDD60729EC974700453483 /* unicodedata.cpython-311-darwin.so */,
+				9DCDD60829EC974700453483 /* termios.cpython-311-darwin.so */,
+				9DCDD60929EC974700453483 /* zlib.cpython-311-darwin.so */,
+				9DCDD60A29EC974700453483 /* _sha256.cpython-311-darwin.so */,
+				9DCDD60B29EC974700453483 /* _bisect.cpython-311-darwin.so */,
+				9DCDD60C29EC974700453483 /* _asyncio.cpython-311-darwin.so */,
+				9DCDD60D29EC974700453483 /* _codecs_cn.cpython-311-darwin.so */,
+				9DCDD60E29EC974700453483 /* _multibytecodec.cpython-311-darwin.so */,
+				9DCDD60F29EC974700453483 /* _sha512.cpython-311-darwin.so */,
+				9DCDD61029EC974700453483 /* _posixsubprocess.cpython-311-darwin.so */,
+				9DCDD61129EC974700453483 /* _pickle.cpython-311-darwin.so */,
+				9DCDD61229EC974700453483 /* pyexpat.cpython-311-darwin.so */,
+				9DCDD61329EC974700453483 /* select.cpython-311-darwin.so */,
+				9DCDD61429EC974700453483 /* _lzma.cpython-311-darwin.so */,
+				9DCDD61529EC974700453483 /* readline.cpython-311-darwin.so */,
+				9DCDD61629EC974700453483 /* _typing.cpython-311-darwin.so */,
+				9DCDD61729EC974700453483 /* syslog.cpython-311-darwin.so */,
+				9DCDD61829EC974700453483 /* _blake2.cpython-311-darwin.so */,
+				9DCDD61929EC974700453483 /* _queue.cpython-311-darwin.so */,
+				9DCDD61A29EC974700453483 /* array.cpython-311-darwin.so */,
+				9DCDD61B29EC974700453483 /* _struct.cpython-311-darwin.so */,
+				9DCDD61C29EC974700453483 /* _zoneinfo.cpython-311-darwin.so */,
+				9DCDD61D29EC974700453483 /* _posixshmem.cpython-311-darwin.so */,
+				9DCDD61E29EC974700453483 /* _sha1.cpython-311-darwin.so */,
+				9DCDD61F29EC974700453483 /* _decimal.cpython-311-darwin.so */,
+				9DCDD62029EC974700453483 /* _socket.cpython-311-darwin.so */,
+				9DCDD62129EC974700453483 /* _hashlib.cpython-311-darwin.so */,
+				9DCDD62229EC974700453483 /* _curses_panel.cpython-311-darwin.so */,
+				9DCDD62329EC974700453483 /* grp.cpython-311-darwin.so */,
+				9DCDD62429EC974700453483 /* _ssl.cpython-311-darwin.so */,
+				9DCDD62529EC974700453483 /* _sha3.cpython-311-darwin.so */,
+				9DCDD62629EC974700453483 /* fcntl.cpython-311-darwin.so */,
+				9DCDD62729EC974700453483 /* _statistics.cpython-311-darwin.so */,
+				9DCDD62829EC974700453483 /* _csv.cpython-311-darwin.so */,
+			);
+			path = "lib-dynload";
+			sourceTree = "<group>";
+		};
+		9DCDD62929EC974700453483 /* encodings */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD62A29EC974700453483 /* mac_romanian.py */,
+				9DCDD62B29EC974700453483 /* mac_farsi.py */,
+				9DCDD62C29EC974700453483 /* idna.py */,
+				9DCDD62D29EC974700453483 /* cp273.py */,
+				9DCDD62E29EC974700453483 /* punycode.py */,
+				9DCDD62F29EC974700453483 /* raw_unicode_escape.py */,
+				9DCDD63029EC974700453483 /* utf_8.py */,
+				9DCDD63129EC974700453483 /* cp1252.py */,
+				9DCDD63229EC974700453483 /* cp869.py */,
+				9DCDD63329EC974700453483 /* iso8859_14.py */,
+				9DCDD63429EC974700453483 /* iso8859_2.py */,
+				9DCDD63529EC974700453483 /* mac_arabic.py */,
+				9DCDD63629EC974700453483 /* mac_croatian.py */,
+				9DCDD63729EC974700453483 /* big5hkscs.py */,
+				9DCDD63829EC974700453483 /* cp1256.py */,
+				9DCDD63929EC974700453483 /* iso8859_6.py */,
+				9DCDD63A29EC974700453483 /* iso8859_10.py */,
+				9DCDD63B29EC974700453483 /* iso2022_kr.py */,
+				9DCDD63C29EC974700453483 /* cp1140.py */,
+				9DCDD63D29EC974700453483 /* cp1125.py */,
+				9DCDD63E29EC974700453483 /* iso2022_jp_1.py */,
+				9DCDD63F29EC974700453483 /* cp1257.py */,
+				9DCDD64029EC974700453483 /* cp949.py */,
+				9DCDD64129EC974700453483 /* cp858.py */,
+				9DCDD64229EC974700453483 /* iso8859_7.py */,
+				9DCDD64329EC974700453483 /* iso8859_11.py */,
+				9DCDD64429EC974700453483 /* hp_roman8.py */,
+				9DCDD64529EC974700453483 /* koi8_r.py */,
+				9DCDD64629EC974700453483 /* zlib_codec.py */,
+				9DCDD64729EC974700453483 /* gbk.py */,
+				9DCDD64829EC974700453483 /* johab.py */,
+				9DCDD64929EC974700453483 /* cp1253.py */,
+				9DCDD64A29EC974700453483 /* iso8859_15.py */,
+				9DCDD64B29EC974700453483 /* iso2022_jp_2004.py */,
+				9DCDD64C29EC974700453483 /* mac_iceland.py */,
+				9DCDD64D29EC974700453483 /* iso8859_3.py */,
+				9DCDD64E29EC974700453483 /* mac_greek.py */,
+				9DCDD64F29EC974700453483 /* rot_13.py */,
+				9DCDD65029EC974700453483 /* utf_16_be.py */,
+				9DCDD65129EC974700453483 /* euc_kr.py */,
+				9DCDD65229EC974700453483 /* euc_jisx0213.py */,
+				9DCDD65329EC974700453483 /* cp863.py */,
+				9DCDD65429EC974700453483 /* ascii.py */,
+				9DCDD65529EC974700453483 /* iso8859_8.py */,
+				9DCDD65629EC974700453483 /* cp857.py */,
+				9DCDD65729EC974700453483 /* utf_32_be.py */,
+				9DCDD65829EC974700453483 /* cp1258.py */,
+				9DCDD65929EC974700453483 /* oem.py */,
+				9DCDD65A29EC974700453483 /* mac_latin2.py */,
+				9DCDD65B29EC974700453483 /* cp775.py */,
+				9DCDD65C29EC974700453483 /* mac_roman.py */,
+				9DCDD65D29EC974700453483 /* __init__.py */,
+				9DCDD65E29EC974700453483 /* cp852.py */,
+				9DCDD65F29EC974700453483 /* shift_jisx0213.py */,
+				9DCDD66029EC974700453483 /* cp866.py */,
+				9DCDD66129EC974700453483 /* utf_7.py */,
+				9DCDD66229EC974700453483 /* base64_codec.py */,
+				9DCDD66329EC974700453483 /* cp932.py */,
+				9DCDD66429EC974700453483 /* cp720.py */,
+				9DCDD66529EC974700453483 /* cp862.py */,
+				9DCDD66629EC974700453483 /* cp437.py */,
+				9DCDD66729EC974700453483 /* palmos.py */,
+				9DCDD66829EC974700453483 /* iso8859_9.py */,
+				9DCDD66929EC974700453483 /* cp856.py */,
+				9DCDD66A29EC974700453483 /* aliases.py */,
+				9DCDD66B29EC974700453483 /* latin_1.py */,
+				9DCDD66C29EC974700453483 /* cp875.py */,
+				9DCDD66D29EC974700453483 /* cp950.py */,
+				9DCDD66E29EC974700453483 /* unicode_escape.py */,
+				9DCDD66F29EC974700453483 /* cp737.py */,
+				9DCDD67029EC974700453483 /* cp865.py */,
+				9DCDD67129EC974700453483 /* ptcp154.py */,
+				9DCDD67229EC974700453483 /* big5.py */,
+				9DCDD67329EC974700453483 /* cp424.py */,
+				9DCDD67429EC974700453483 /* cp861.py */,
+				9DCDD67529EC974700453483 /* euc_jp.py */,
+				9DCDD67629EC974700453483 /* cp855.py */,
+				9DCDD67729EC974700453483 /* shift_jis.py */,
+				9DCDD67829EC974700453483 /* utf_32_le.py */,
+				9DCDD67929EC974700453483 /* cp500.py */,
+				9DCDD67A29EC974700453483 /* undefined.py */,
+				9DCDD67B29EC974700453483 /* cp860.py */,
+				9DCDD67C29EC974700453483 /* uu_codec.py */,
+				9DCDD67D29EC974700453483 /* utf_16_le.py */,
+				9DCDD67E29EC974700453483 /* gb18030.py */,
+				9DCDD67F29EC974700453483 /* cp874.py */,
+				9DCDD68029EC974700453483 /* cp850.py */,
+				9DCDD68129EC974700453483 /* cp864.py */,
+				9DCDD68229EC974700453483 /* utf_32.py */,
+				9DCDD68329EC974700453483 /* koi8_u.py */,
+				9DCDD68429EC974700453483 /* cp1254.py */,
+				9DCDD68529EC974700453483 /* iso2022_jp_2.py */,
+				9DCDD68629EC974700453483 /* utf_16.py */,
+				9DCDD68729EC974700453483 /* iso8859_4.py */,
+				9DCDD68829EC974700453483 /* euc_jis_2004.py */,
+				9DCDD68929EC974700453483 /* mbcs.py */,
+				9DCDD68A29EC974700453483 /* cp1250.py */,
+				9DCDD68B29EC974700453483 /* gb2312.py */,
+				9DCDD68C29EC974700453483 /* iso8859_16.py */,
+				9DCDD68D29EC974700453483 /* mac_cyrillic.py */,
+				9DCDD68E29EC974700453483 /* hex_codec.py */,
+				9DCDD68F29EC974700453483 /* tis_620.py */,
+				9DCDD69029EC974700453483 /* cp037.py */,
+				9DCDD69129EC974700453483 /* cp1006.py */,
+				9DCDD69229EC974700453483 /* cp1251.py */,
+				9DCDD69329EC974700453483 /* mac_turkish.py */,
+				9DCDD69429EC974700453483 /* iso2022_jp_ext.py */,
+				9DCDD69529EC974700453483 /* iso8859_1.py */,
+				9DCDD69629EC974700453483 /* hz.py */,
+				9DCDD69729EC974700453483 /* bz2_codec.py */,
+				9DCDD69829EC974700453483 /* quopri_codec.py */,
+				9DCDD69929EC974700453483 /* kz1048.py */,
+				9DCDD69A29EC974700453483 /* utf_8_sig.py */,
+				9DCDD69B29EC974700453483 /* koi8_t.py */,
+				9DCDD69C29EC974700453483 /* cp1255.py */,
+				9DCDD69D29EC974700453483 /* iso2022_jp_3.py */,
+				9DCDD69E29EC974700453483 /* shift_jis_2004.py */,
+				9DCDD69F29EC974700453483 /* cp1026.py */,
+				9DCDD6A029EC974700453483 /* charmap.py */,
+				9DCDD6A129EC974700453483 /* iso8859_5.py */,
+				9DCDD6A229EC974700453483 /* iso8859_13.py */,
+				9DCDD6A329EC974700453483 /* iso2022_jp.py */,
+			);
+			path = encodings;
+			sourceTree = "<group>";
+		};
+		9DCDD6A829EC974700453483 /* distutils */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD6A929EC974700453483 /* _msvccompiler.py */,
+				9DCDD6AA29EC974700453483 /* unixccompiler.py */,
+				9DCDD6AB29EC974700453483 /* filelist.py */,
+				9DCDD6AC29EC974700453483 /* ccompiler.py */,
+				9DCDD6AD29EC974700453483 /* msvc9compiler.py */,
+				9DCDD6AE29EC974700453483 /* archive_util.py */,
+				9DCDD6AF29EC974700453483 /* cmd.py */,
+				9DCDD6B029EC974700453483 /* config.py */,
+				9DCDD6B129EC974700453483 /* version.py */,
+				9DCDD6B229EC974700453483 /* log.py */,
+				9DCDD6B329EC974700453483 /* util.py */,
+				9DCDD6B429EC974700453483 /* fancy_getopt.py */,
+				9DCDD6B529EC974700453483 /* versionpredicate.py */,
+				9DCDD6B629EC974700453483 /* __init__.py */,
+				9DCDD6B729EC974700453483 /* file_util.py */,
+				9DCDD6B829EC974700453483 /* core.py */,
+				9DCDD6B929EC974700453483 /* README */,
+				9DCDD6BA29EC974700453483 /* cygwinccompiler.py */,
+				9DCDD6BB29EC974700453483 /* extension.py */,
+				9DCDD6BC29EC974700453483 /* debug.py */,
+				9DCDD6BD29EC974700453483 /* spawn.py */,
+				9DCDD6BE29EC974700453483 /* text_file.py */,
+				9DCDD6BF29EC974700453483 /* msvccompiler.py */,
+				9DCDD6C029EC974700453483 /* errors.py */,
+				9DCDD6C129EC974700453483 /* dep_util.py */,
+				9DCDD6C229EC974700453483 /* command */,
+				9DCDD6D929EC974700453483 /* dir_util.py */,
+				9DCDD6DA29EC974700453483 /* sysconfig.py */,
+				9DCDD6DB29EC974700453483 /* dist.py */,
+				9DCDD6DC29EC974700453483 /* bcppcompiler.py */,
+			);
+			path = distutils;
+			sourceTree = "<group>";
+		};
+		9DCDD6C229EC974700453483 /* command */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD6C329EC974700453483 /* build.py */,
+				9DCDD6C429EC974700453483 /* build_ext.py */,
+				9DCDD6C529EC974700453483 /* config.py */,
+				9DCDD6C629EC974700453483 /* clean.py */,
+				9DCDD6C729EC974700453483 /* check.py */,
+				9DCDD6C829EC974700453483 /* install_scripts.py */,
+				9DCDD6C929EC974700453483 /* upload.py */,
+				9DCDD6CA29EC974700453483 /* register.py */,
+				9DCDD6CB29EC974700453483 /* install_headers.py */,
+				9DCDD6CC29EC974700453483 /* install_lib.py */,
+				9DCDD6CD29EC974700453483 /* build_py.py */,
+				9DCDD6CE29EC974700453483 /* bdist_dumb.py */,
+				9DCDD6CF29EC974700453483 /* __init__.py */,
+				9DCDD6D029EC974700453483 /* sdist.py */,
+				9DCDD6D129EC974700453483 /* bdist.py */,
+				9DCDD6D229EC974700453483 /* build_scripts.py */,
+				9DCDD6D329EC974700453483 /* bdist_rpm.py */,
+				9DCDD6D429EC974700453483 /* build_clib.py */,
+				9DCDD6D529EC974700453483 /* command_template */,
+				9DCDD6D629EC974700453483 /* install.py */,
+				9DCDD6D729EC974700453483 /* install_egg_info.py */,
+				9DCDD6D829EC974700453483 /* install_data.py */,
+			);
+			path = command;
+			sourceTree = "<group>";
+		};
+		9DCDD6E429EC974700453483 /* zoneinfo */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD6E529EC974700453483 /* _common.py */,
+				9DCDD6E629EC974700453483 /* __init__.py */,
+				9DCDD6E729EC974700453483 /* _zoneinfo.py */,
+				9DCDD6E829EC974700453483 /* _tzpath.py */,
+			);
+			path = zoneinfo;
+			sourceTree = "<group>";
+		};
+		9DCDD6EA29EC974700453483 /* ctypes */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD6EB29EC974700453483 /* _aix.py */,
+				9DCDD6EC29EC974700453483 /* wintypes.py */,
+				9DCDD6ED29EC974700453483 /* util.py */,
+				9DCDD6EE29EC974700453483 /* __init__.py */,
+				9DCDD6EF29EC974700453483 /* _endian.py */,
+				9DCDD6F029EC974700453483 /* macholib */,
+			);
+			path = ctypes;
+			sourceTree = "<group>";
+		};
+		9DCDD6F029EC974700453483 /* macholib */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD6F129EC974700453483 /* dyld.py */,
+				9DCDD6F229EC974700453483 /* framework.py */,
+				9DCDD6F329EC974700453483 /* fetch_macholib */,
+				9DCDD6F429EC974700453483 /* __init__.py */,
+				9DCDD6F529EC974700453483 /* README.ctypes */,
+				9DCDD6F629EC974700453483 /* fetch_macholib.bat */,
+				9DCDD6F729EC974700453483 /* dylib.py */,
+			);
+			path = macholib;
+			sourceTree = "<group>";
+		};
+		9DCDD6FD29EC974700453483 /* unittest */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD6FE29EC974700453483 /* signals.py */,
+				9DCDD6FF29EC974700453483 /* runner.py */,
+				9DCDD70029EC974700453483 /* suite.py */,
+				9DCDD70129EC974700453483 /* test */,
+				9DCDD72129EC974700453483 /* util.py */,
+				9DCDD72229EC974700453483 /* __init__.py */,
+				9DCDD72329EC974700453483 /* result.py */,
+				9DCDD72429EC974700453483 /* loader.py */,
+				9DCDD72529EC974700453483 /* case.py */,
+				9DCDD72629EC974700453483 /* main.py */,
+				9DCDD72729EC974700453483 /* async_case.py */,
+				9DCDD72829EC974700453483 /* __main__.py */,
+				9DCDD72929EC974700453483 /* _log.py */,
+				9DCDD72A29EC974700453483 /* mock.py */,
+			);
+			path = unittest;
+			sourceTree = "<group>";
+		};
+		9DCDD70129EC974700453483 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD70229EC974700453483 /* test_result.py */,
+				9DCDD70329EC974700453483 /* support.py */,
+				9DCDD70429EC974700453483 /* test_loader.py */,
+				9DCDD70529EC974700453483 /* test_async_case.py */,
+				9DCDD70629EC974700453483 /* test_skipping.py */,
+				9DCDD70729EC974700453483 /* test_setups.py */,
+				9DCDD70829EC974700453483 /* test_functiontestcase.py */,
+				9DCDD70929EC974700453483 /* __init__.py */,
+				9DCDD70A29EC974700453483 /* test_break.py */,
+				9DCDD70B29EC974700453483 /* testmock */,
+				9DCDD71829EC974700453483 /* test_case.py */,
+				9DCDD71929EC974700453483 /* test_discovery.py */,
+				9DCDD71A29EC974700453483 /* test_runner.py */,
+				9DCDD71B29EC974700453483 /* test_program.py */,
+				9DCDD71C29EC974700453483 /* test_suite.py */,
+				9DCDD71D29EC974700453483 /* test_assertions.py */,
+				9DCDD71E29EC974700453483 /* _test_warnings.py */,
+				9DCDD71F29EC974700453483 /* dummy.py */,
+				9DCDD72029EC974700453483 /* __main__.py */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		9DCDD70B29EC974700453483 /* testmock */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD70C29EC974700453483 /* testasync.py */,
+				9DCDD70D29EC974700453483 /* support.py */,
+				9DCDD70E29EC974700453483 /* testcallable.py */,
+				9DCDD70F29EC974700453483 /* __init__.py */,
+				9DCDD71029EC974700453483 /* testmagicmethods.py */,
+				9DCDD71129EC974700453483 /* testmock.py */,
+				9DCDD71229EC974700453483 /* testwith.py */,
+				9DCDD71329EC974700453483 /* testhelpers.py */,
+				9DCDD71429EC974700453483 /* testpatch.py */,
+				9DCDD71529EC974700453483 /* testsealable.py */,
+				9DCDD71629EC974700453483 /* testsentinel.py */,
+				9DCDD71729EC974700453483 /* __main__.py */,
+			);
+			path = testmock;
+			sourceTree = "<group>";
+		};
+		9DCDD73029EC974700453483 /* curses */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD73129EC974700453483 /* textpad.py */,
+				9DCDD73229EC974700453483 /* ascii.py */,
+				9DCDD73329EC974700453483 /* __init__.py */,
+				9DCDD73429EC974700453483 /* has_key.py */,
+				9DCDD73529EC974700453483 /* panel.py */,
+			);
+			path = curses;
+			sourceTree = "<group>";
+		};
+		9DCDD73F29EC974700453483 /* tomllib */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD74029EC974700453483 /* _types.py */,
+				9DCDD74129EC974700453483 /* __init__.py */,
+				9DCDD74229EC974700453483 /* _parser.py */,
+				9DCDD74329EC974700453483 /* _re.py */,
+			);
+			path = tomllib;
+			sourceTree = "<group>";
+		};
+		9DCDD74B29EC974700453483 /* __phello__ */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD74C29EC974700453483 /* spam.py */,
+				9DCDD74D29EC974700453483 /* __init__.py */,
+			);
+			path = __phello__;
+			sourceTree = "<group>";
+		};
+		9DCDD75D29EC974700453483 /* multiprocessing */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD75E29EC974700453483 /* dummy */,
+				9DCDD76129EC974700453483 /* queues.py */,
+				9DCDD76229EC974700453483 /* heap.py */,
+				9DCDD76329EC974700453483 /* shared_memory.py */,
+				9DCDD76429EC974700453483 /* resource_tracker.py */,
+				9DCDD76529EC974700453483 /* reduction.py */,
+				9DCDD76629EC974700453483 /* util.py */,
+				9DCDD76729EC974700453483 /* popen_spawn_win32.py */,
+				9DCDD76829EC974700453483 /* __init__.py */,
+				9DCDD76929EC974700453483 /* forkserver.py */,
+				9DCDD76A29EC974700453483 /* connection.py */,
+				9DCDD76B29EC974700453483 /* context.py */,
+				9DCDD76C29EC974700453483 /* spawn.py */,
+				9DCDD76D29EC974700453483 /* synchronize.py */,
+				9DCDD76E29EC974700453483 /* process.py */,
+				9DCDD76F29EC974700453483 /* sharedctypes.py */,
+				9DCDD77029EC974700453483 /* popen_fork.py */,
+				9DCDD77129EC974700453483 /* pool.py */,
+				9DCDD77229EC974700453483 /* popen_forkserver.py */,
+				9DCDD77329EC974700453483 /* popen_spawn_posix.py */,
+				9DCDD77429EC974700453483 /* managers.py */,
+				9DCDD77529EC974700453483 /* resource_sharer.py */,
+			);
+			path = multiprocessing;
+			sourceTree = "<group>";
+		};
+		9DCDD75E29EC974700453483 /* dummy */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD75F29EC974700453483 /* __init__.py */,
+				9DCDD76029EC974700453483 /* connection.py */,
+			);
+			path = dummy;
+			sourceTree = "<group>";
+		};
+		9DCDD77F29EC974700453483 /* urllib */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD78029EC974700453483 /* error.py */,
+				9DCDD78129EC974700453483 /* request.py */,
+				9DCDD78229EC974700453483 /* __init__.py */,
+				9DCDD78329EC974700453483 /* response.py */,
+				9DCDD78429EC974700453483 /* robotparser.py */,
+				9DCDD78529EC974700453483 /* parse.py */,
+			);
+			path = urllib;
+			sourceTree = "<group>";
+		};
+		9DCDD79429EC974700453483 /* html */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD79529EC974700453483 /* __init__.py */,
+				9DCDD79629EC974700453483 /* parser.py */,
+				9DCDD79729EC974700453483 /* entities.py */,
+			);
+			path = html;
+			sourceTree = "<group>";
+		};
+		9DCDD7A529EC974700453483 /* xml */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD7A629EC974700453483 /* parsers */,
+				9DCDD7A929EC974700453483 /* sax */,
+				9DCDD7B029EC974700453483 /* __init__.py */,
+				9DCDD7B129EC974700453483 /* dom */,
+				9DCDD7BA29EC974700453483 /* etree */,
+			);
+			path = xml;
+			sourceTree = "<group>";
+		};
+		9DCDD7A629EC974700453483 /* parsers */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD7A729EC974700453483 /* expat.py */,
+				9DCDD7A829EC974700453483 /* __init__.py */,
+			);
+			path = parsers;
+			sourceTree = "<group>";
+		};
+		9DCDD7A929EC974700453483 /* sax */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD7AA29EC974700453483 /* handler.py */,
+				9DCDD7AB29EC974700453483 /* __init__.py */,
+				9DCDD7AC29EC974700453483 /* saxutils.py */,
+				9DCDD7AD29EC974700453483 /* xmlreader.py */,
+				9DCDD7AE29EC974700453483 /* expatreader.py */,
+				9DCDD7AF29EC974700453483 /* _exceptions.py */,
+			);
+			path = sax;
+			sourceTree = "<group>";
+		};
+		9DCDD7B129EC974700453483 /* dom */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD7B229EC974700453483 /* pulldom.py */,
+				9DCDD7B329EC974700453483 /* expatbuilder.py */,
+				9DCDD7B429EC974700453483 /* domreg.py */,
+				9DCDD7B529EC974700453483 /* minicompat.py */,
+				9DCDD7B629EC974700453483 /* __init__.py */,
+				9DCDD7B729EC974700453483 /* NodeFilter.py */,
+				9DCDD7B829EC974700453483 /* xmlbuilder.py */,
+				9DCDD7B929EC974700453483 /* minidom.py */,
+			);
+			path = dom;
+			sourceTree = "<group>";
+		};
+		9DCDD7BA29EC974700453483 /* etree */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD7BB29EC974700453483 /* ElementPath.py */,
+				9DCDD7BC29EC974700453483 /* cElementTree.py */,
+				9DCDD7BD29EC974700453483 /* __init__.py */,
+				9DCDD7BE29EC974700453483 /* ElementInclude.py */,
+				9DCDD7BF29EC974700453483 /* ElementTree.py */,
+			);
+			path = etree;
+			sourceTree = "<group>";
+		};
+		9DCDD7CA29EC974700453483 /* wsgiref */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD7CB29EC974700453483 /* util.py */,
+				9DCDD7CC29EC974700453483 /* handlers.py */,
+				9DCDD7CD29EC974700453483 /* __init__.py */,
+				9DCDD7CE29EC974700453483 /* types.py */,
+				9DCDD7CF29EC974700453483 /* validate.py */,
+				9DCDD7D029EC974700453483 /* simple_server.py */,
+				9DCDD7D129EC974700453483 /* headers.py */,
+			);
+			path = wsgiref;
+			sourceTree = "<group>";
+		};
+		9DCDD7D729EC974700453483 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD7D829EC974700453483 /* decoder.py */,
+				9DCDD7D929EC974700453483 /* scanner.py */,
+				9DCDD7DA29EC974700453483 /* __init__.py */,
+				9DCDD7DB29EC974700453483 /* encoder.py */,
+				9DCDD7DC29EC974700453483 /* tool.py */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		9DCDD7E329EC974700453483 /* http */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD7E429EC974700453483 /* cookies.py */,
+				9DCDD7E529EC974700453483 /* server.py */,
+				9DCDD7E629EC974700453483 /* client.py */,
+				9DCDD7E729EC974700453483 /* __init__.py */,
+				9DCDD7E829EC974700453483 /* cookiejar.py */,
+			);
+			path = http;
+			sourceTree = "<group>";
+		};
+		9DCDD7E929EC974700453483 /* sqlite3 */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD7EA29EC974700453483 /* __init__.py */,
+				9DCDD7EB29EC974700453483 /* dump.py */,
+				9DCDD7EC29EC974700453483 /* dbapi2.py */,
+			);
+			path = sqlite3;
+			sourceTree = "<group>";
+		};
+		9DCDD7F229EC974700453483 /* concurrent */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD7F329EC974700453483 /* futures */,
+				9DCDD7F829EC974700453483 /* __init__.py */,
+			);
+			path = concurrent;
+			sourceTree = "<group>";
+		};
+		9DCDD7F329EC974700453483 /* futures */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD7F429EC974700453483 /* _base.py */,
+				9DCDD7F529EC974700453483 /* thread.py */,
+				9DCDD7F629EC974700453483 /* __init__.py */,
+				9DCDD7F729EC974700453483 /* process.py */,
+			);
+			path = futures;
+			sourceTree = "<group>";
+		};
+		9DCDD80F29EC974700453483 /* venv */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD81029EC974700453483 /* __init__.py */,
+				9DCDD81129EC974700453483 /* scripts */,
+				9DCDD81829EC974700453483 /* __main__.py */,
+			);
+			path = venv;
+			sourceTree = "<group>";
+		};
+		9DCDD81129EC974700453483 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD81229EC974700453483 /* posix */,
+				9DCDD81529EC974700453483 /* common */,
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
+		9DCDD81229EC974700453483 /* posix */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD81329EC974700453483 /* activate.fish */,
+				9DCDD81429EC974700453483 /* activate.csh */,
+			);
+			path = posix;
+			sourceTree = "<group>";
+		};
+		9DCDD81529EC974700453483 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD81629EC974700453483 /* Activate.ps1 */,
+				9DCDD81729EC974700453483 /* activate */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		9DCDD81C29EC974700453483 /* dbm */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD81D29EC974700453483 /* ndbm.py */,
+				9DCDD81E29EC974700453483 /* gnu.py */,
+				9DCDD81F29EC974700453483 /* __init__.py */,
+				9DCDD82029EC974700453483 /* dumb.py */,
+			);
+			path = dbm;
+			sourceTree = "<group>";
+		};
+		9DCDD82529EC974700453483 /* importlib */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD82629EC974700453483 /* readers.py */,
+				9DCDD82729EC974700453483 /* _abc.py */,
+				9DCDD82829EC974700453483 /* util.py */,
+				9DCDD82929EC974700453483 /* _bootstrap.py */,
+				9DCDD82A29EC974700453483 /* resources */,
+				9DCDD83329EC974700453483 /* __init__.py */,
+				9DCDD83429EC974700453483 /* _bootstrap_external.py */,
+				9DCDD83529EC974700453483 /* machinery.py */,
+				9DCDD83629EC974700453483 /* simple.py */,
+				9DCDD83729EC974700453483 /* metadata */,
+				9DCDD83F29EC974700453483 /* abc.py */,
+			);
+			path = importlib;
+			sourceTree = "<group>";
+		};
+		9DCDD82A29EC974700453483 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD82B29EC974700453483 /* readers.py */,
+				9DCDD82C29EC974700453483 /* _common.py */,
+				9DCDD82D29EC974700453483 /* __init__.py */,
+				9DCDD82E29EC974700453483 /* _itertools.py */,
+				9DCDD82F29EC974700453483 /* _adapters.py */,
+				9DCDD83029EC974700453483 /* _legacy.py */,
+				9DCDD83129EC974700453483 /* simple.py */,
+				9DCDD83229EC974700453483 /* abc.py */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		9DCDD83729EC974700453483 /* metadata */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD83829EC974700453483 /* _meta.py */,
+				9DCDD83929EC974700453483 /* _text.py */,
+				9DCDD83A29EC974700453483 /* __init__.py */,
+				9DCDD83B29EC974700453483 /* _functools.py */,
+				9DCDD83C29EC974700453483 /* _collections.py */,
+				9DCDD83D29EC974700453483 /* _itertools.py */,
+				9DCDD83E29EC974700453483 /* _adapters.py */,
+			);
+			path = metadata;
+			sourceTree = "<group>";
+		};
+		9DCDD84029EC974700453483 /* xmlrpc */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD84129EC974700453483 /* server.py */,
+				9DCDD84229EC974700453483 /* client.py */,
+				9DCDD84329EC974700453483 /* __init__.py */,
+			);
+			path = xmlrpc;
+			sourceTree = "<group>";
+		};
+		9DCDD84729EC974700453483 /* lib2to3 */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD84829EC974700453483 /* fixes */,
+				9DCDD87E29EC974700453483 /* Grammar.txt */,
+				9DCDD87F29EC974700453483 /* Grammar3.11.0.final.0.pickle */,
+				9DCDD88029EC974700453483 /* refactor.py */,
+				9DCDD88129EC974700453483 /* fixer_base.py */,
+				9DCDD88229EC974700453483 /* PatternGrammar.txt */,
+				9DCDD88329EC974700453483 /* __init__.py */,
+				9DCDD88429EC974700453483 /* btm_utils.py */,
+				9DCDD88529EC974700453483 /* pygram.py */,
+				9DCDD88629EC974700453483 /* patcomp.py */,
+				9DCDD88729EC974700453483 /* main.py */,
+				9DCDD88829EC974700453483 /* pgen2 */,
+				9DCDD89229EC974700453483 /* PatternGrammar3.11.0.final.0.pickle */,
+				9DCDD89329EC974700453483 /* __main__.py */,
+				9DCDD89429EC974700453483 /* fixer_util.py */,
+				9DCDD89529EC974700453483 /* btm_matcher.py */,
+				9DCDD89629EC974700453483 /* pytree.py */,
+			);
+			path = lib2to3;
+			sourceTree = "<group>";
+		};
+		9DCDD84829EC974700453483 /* fixes */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD84929EC974700453483 /* fix_throw.py */,
+				9DCDD84A29EC974700453483 /* fix_print.py */,
+				9DCDD84B29EC974700453483 /* fix_input.py */,
+				9DCDD84C29EC974700453483 /* fix_buffer.py */,
+				9DCDD84D29EC974700453483 /* fix_paren.py */,
+				9DCDD84E29EC974700453483 /* fix_exec.py */,
+				9DCDD84F29EC974700453483 /* fix_filter.py */,
+				9DCDD85029EC974700453483 /* fix_unicode.py */,
+				9DCDD85129EC974700453483 /* fix_ne.py */,
+				9DCDD85229EC974700453483 /* fix_nonzero.py */,
+				9DCDD85329EC974700453483 /* fix_sys_exc.py */,
+				9DCDD85429EC974700453483 /* fix_zip.py */,
+				9DCDD85529EC974700453483 /* fix_map.py */,
+				9DCDD85629EC974700453483 /* fix_imports2.py */,
+				9DCDD85729EC974700453483 /* fix_metaclass.py */,
+				9DCDD85829EC974700453483 /* fix_except.py */,
+				9DCDD85929EC974700453483 /* fix_apply.py */,
+				9DCDD85A29EC974700453483 /* fix_set_literal.py */,
+				9DCDD85B29EC974700453483 /* fix_getcwdu.py */,
+				9DCDD85C29EC974700453483 /* fix_urllib.py */,
+				9DCDD85D29EC974700453483 /* fix_future.py */,
+				9DCDD85E29EC974700453483 /* fix_operator.py */,
+				9DCDD85F29EC974700453483 /* fix_imports.py */,
+				9DCDD86029EC974700453483 /* __init__.py */,
+				9DCDD86129EC974700453483 /* fix_standarderror.py */,
+				9DCDD86229EC974700453483 /* fix_renames.py */,
+				9DCDD86329EC974700453483 /* fix_tuple_params.py */,
+				9DCDD86429EC974700453483 /* fix_idioms.py */,
+				9DCDD86529EC974700453483 /* fix_raw_input.py */,
+				9DCDD86629EC974700453483 /* fix_methodattrs.py */,
+				9DCDD86729EC974700453483 /* fix_itertools_imports.py */,
+				9DCDD86829EC974700453483 /* fix_long.py */,
+				9DCDD86929EC974700453483 /* fix_raise.py */,
+				9DCDD86A29EC974700453483 /* fix_dict.py */,
+				9DCDD86B29EC974700453483 /* fix_reload.py */,
+				9DCDD86C29EC974700453483 /* fix_funcattrs.py */,
+				9DCDD86D29EC974700453483 /* fix_reduce.py */,
+				9DCDD86E29EC974700453483 /* fix_intern.py */,
+				9DCDD86F29EC974700453483 /* fix_import.py */,
+				9DCDD87029EC974700453483 /* fix_next.py */,
+				9DCDD87129EC974700453483 /* fix_basestring.py */,
+				9DCDD87229EC974700453483 /* fix_asserts.py */,
+				9DCDD87329EC974700453483 /* fix_execfile.py */,
+				9DCDD87429EC974700453483 /* fix_has_key.py */,
+				9DCDD87529EC974700453483 /* fix_repr.py */,
+				9DCDD87629EC974700453483 /* fix_numliterals.py */,
+				9DCDD87729EC974700453483 /* fix_isinstance.py */,
+				9DCDD87829EC974700453483 /* fix_types.py */,
+				9DCDD87929EC974700453483 /* fix_xreadlines.py */,
+				9DCDD87A29EC974700453483 /* fix_itertools.py */,
+				9DCDD87B29EC974700453483 /* fix_exitfunc.py */,
+				9DCDD87C29EC974700453483 /* fix_ws_comma.py */,
+				9DCDD87D29EC974700453483 /* fix_xrange.py */,
+			);
+			path = fixes;
+			sourceTree = "<group>";
+		};
+		9DCDD88829EC974700453483 /* pgen2 */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD88929EC974700453483 /* token.py */,
+				9DCDD88A29EC974700453483 /* pgen.py */,
+				9DCDD88B29EC974700453483 /* __init__.py */,
+				9DCDD88C29EC974700453483 /* literals.py */,
+				9DCDD88D29EC974700453483 /* grammar.py */,
+				9DCDD88E29EC974700453483 /* conv.py */,
+				9DCDD88F29EC974700453483 /* parse.py */,
+				9DCDD89029EC974700453483 /* driver.py */,
+				9DCDD89129EC974700453483 /* tokenize.py */,
+			);
+			path = pgen2;
+			sourceTree = "<group>";
+		};
+		9DCDD89729EC974700453483 /* pydoc_data */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD89829EC974700453483 /* __init__.py */,
+				9DCDD89929EC974700453483 /* _pydoc.css */,
+				9DCDD89A29EC974700453483 /* topics.py */,
+			);
+			path = pydoc_data;
+			sourceTree = "<group>";
+		};
+		9DCDD89F29EC974700453483 /* collections */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD8A029EC974700453483 /* __init__.py */,
+				9DCDD8A129EC974700453483 /* abc.py */,
+			);
+			path = collections;
+			sourceTree = "<group>";
+		};
+		9DCDD8A729EC974700453483 /* asyncio */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD8A829EC974700453483 /* mixins.py */,
+				9DCDD8A929EC974700453483 /* queues.py */,
+				9DCDD8AA29EC974700453483 /* streams.py */,
+				9DCDD8AB29EC974700453483 /* tasks.py */,
+				9DCDD8AC29EC974700453483 /* selector_events.py */,
+				9DCDD8AD29EC974700453483 /* log.py */,
+				9DCDD8AE29EC974700453483 /* taskgroups.py */,
+				9DCDD8AF29EC974700453483 /* protocols.py */,
+				9DCDD8B029EC974700453483 /* events.py */,
+				9DCDD8B129EC974700453483 /* base_events.py */,
+				9DCDD8B229EC974700453483 /* subprocess.py */,
+				9DCDD8B329EC974700453483 /* constants.py */,
+				9DCDD8B429EC974700453483 /* proactor_events.py */,
+				9DCDD8B529EC974700453483 /* format_helpers.py */,
+				9DCDD8B629EC974700453483 /* locks.py */,
+				9DCDD8B729EC974700453483 /* __init__.py */,
+				9DCDD8B829EC974700453483 /* timeouts.py */,
+				9DCDD8B929EC974700453483 /* trsock.py */,
+				9DCDD8BA29EC974700453483 /* futures.py */,
+				9DCDD8BB29EC974700453483 /* sslproto.py */,
+				9DCDD8BC29EC974700453483 /* staggered.py */,
+				9DCDD8BD29EC974700453483 /* threads.py */,
+				9DCDD8BE29EC974700453483 /* base_subprocess.py */,
+				9DCDD8BF29EC974700453483 /* windows_utils.py */,
+				9DCDD8C029EC974700453483 /* runners.py */,
+				9DCDD8C129EC974700453483 /* exceptions.py */,
+				9DCDD8C229EC974700453483 /* transports.py */,
+				9DCDD8C329EC974700453483 /* base_tasks.py */,
+				9DCDD8C429EC974700453483 /* coroutines.py */,
+				9DCDD8C529EC974700453483 /* windows_events.py */,
+				9DCDD8C629EC974700453483 /* base_futures.py */,
+				9DCDD8C729EC974700453483 /* __main__.py */,
+				9DCDD8C829EC974700453483 /* unix_events.py */,
+			);
+			path = asyncio;
+			sourceTree = "<group>";
+		};
+		9DCDD8C929EC974700453483 /* logging */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD8CA29EC974700453483 /* config.py */,
+				9DCDD8CB29EC974700453483 /* handlers.py */,
+				9DCDD8CC29EC974700453483 /* __init__.py */,
+			);
+			path = logging;
+			sourceTree = "<group>";
+		};
+		9DCDD8D029EC974700453483 /* email */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD8D129EC974700453483 /* contentmanager.py */,
+				9DCDD8D229EC974700453483 /* _policybase.py */,
+				9DCDD8D329EC974700453483 /* header.py */,
+				9DCDD8D429EC974700453483 /* _encoded_words.py */,
+				9DCDD8D529EC974700453483 /* _header_value_parser.py */,
+				9DCDD8D629EC974700453483 /* policy.py */,
+				9DCDD8D729EC974700453483 /* __init__.py */,
+				9DCDD8D829EC974700453483 /* message.py */,
+				9DCDD8D929EC974700453483 /* encoders.py */,
+				9DCDD8DA29EC974700453483 /* parser.py */,
+				9DCDD8DB29EC974700453483 /* generator.py */,
+				9DCDD8DC29EC974700453483 /* utils.py */,
+				9DCDD8DD29EC974700453483 /* charset.py */,
+				9DCDD8DE29EC974700453483 /* iterators.py */,
+				9DCDD8DF29EC974700453483 /* quoprimime.py */,
+				9DCDD8E029EC974700453483 /* mime */,
+				9DCDD8EA29EC974700453483 /* errors.py */,
+				9DCDD8EB29EC974700453483 /* feedparser.py */,
+				9DCDD8EC29EC974700453483 /* architecture.rst */,
+				9DCDD8ED29EC974700453483 /* _parseaddr.py */,
+				9DCDD8EE29EC974700453483 /* base64mime.py */,
+				9DCDD8EF29EC974700453483 /* headerregistry.py */,
+			);
+			path = email;
+			sourceTree = "<group>";
+		};
+		9DCDD8E029EC974700453483 /* mime */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD8E129EC974700453483 /* multipart.py */,
+				9DCDD8E229EC974700453483 /* __init__.py */,
+				9DCDD8E329EC974700453483 /* message.py */,
+				9DCDD8E429EC974700453483 /* application.py */,
+				9DCDD8E529EC974700453483 /* nonmultipart.py */,
+				9DCDD8E629EC974700453483 /* text.py */,
+				9DCDD8E729EC974700453483 /* audio.py */,
+				9DCDD8E829EC974700453483 /* image.py */,
+				9DCDD8E929EC974700453483 /* base.py */,
+			);
+			path = mime;
+			sourceTree = "<group>";
+		};
+		9DCDD8F429EC974700453483 /* re */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDD8F529EC974700453483 /* _constants.py */,
+				9DCDD8F629EC974700453483 /* _compiler.py */,
+				9DCDD8F729EC974700453483 /* __init__.py */,
+				9DCDD8F829EC974700453483 /* _casefix.py */,
+				9DCDD8F929EC974700453483 /* _parser.py */,
+			);
+			path = re;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,6 +1976,7 @@
 				9DAED89129EC8CDB00B23231 /* Sources */,
 				9DAED89229EC8CDB00B23231 /* Frameworks */,
 				9DAED89329EC8CDB00B23231 /* Resources */,
+				9DCDD8FD29EC977200453483 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -137,10 +2033,31 @@
 			files = (
 				9DAED8A029EC8CDC00B23231 /* Preview Assets.xcassets in Resources */,
 				9DAED89D29EC8CDC00B23231 /* Assets.xcassets in Resources */,
+				9DCDDF0329EC9A0400453483 /* python-stdlib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9DCDD8FD29EC977200453483 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\necho \"Signing as $EXPANDED_CODE_SIGN_IDENTITY_NAME ($EXPANDED_CODE_SIGN_IDENTITY)\"\nfind \"$CODESIGNING_FOLDER_PATH/Contents/Resources/python-stdlib/lib-dynload\" -name \"*.so\" -exec /usr/bin/codesign --force --sign \"$EXPANDED_CODE_SIGN_IDENTITY\" -o runtime --timestamp=none --preserve-metadata=identifier,entitlements,flags --generate-entitlement-der {} \\;\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9DAED89129EC8CDB00B23231 /* Sources */ = {
