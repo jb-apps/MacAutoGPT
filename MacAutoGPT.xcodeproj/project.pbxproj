@@ -11,6 +11,7 @@
 		9DAED89B29EC8CDB00B23231 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAED89A29EC8CDB00B23231 /* ContentView.swift */; };
 		9DAED89D29EC8CDC00B23231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DAED89C29EC8CDC00B23231 /* Assets.xcassets */; };
 		9DAED8A029EC8CDC00B23231 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DAED89F29EC8CDC00B23231 /* Preview Assets.xcassets */; };
+		9DAED8A929EC8D3500B23231 /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9DAED8A829EC8D3500B23231 /* PythonKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DAED8A929EC8D3500B23231 /* PythonKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = MacAutoGPT;
+			packageProductDependencies = (
+				9DAED8A829EC8D3500B23231 /* PythonKit */,
+			);
 			productName = MacAutoGPT;
 			productReference = 9DAED89529EC8CDB00B23231 /* MacAutoGPT.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +118,9 @@
 				Base,
 			);
 			mainGroup = 9DAED88C29EC8CDB00B23231;
+			packageReferences = (
+				9DAED8A729EC8D3500B23231 /* XCRemoteSwiftPackageReference "PythonKit" */,
+			);
 			productRefGroup = 9DAED89629EC8CDB00B23231 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -336,6 +344,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9DAED8A729EC8D3500B23231 /* XCRemoteSwiftPackageReference "PythonKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pvieito/PythonKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9DAED8A829EC8D3500B23231 /* PythonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9DAED8A729EC8D3500B23231 /* XCRemoteSwiftPackageReference "PythonKit" */;
+			productName = PythonKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9DAED88D29EC8CDB00B23231 /* Project object */;
 }
